@@ -1,0 +1,31 @@
+---
+title: "Important Deadlines"
+---
+
+::: {.callout-warning}
+## Notice
+All dates below are **tentative** and subject to change. Check course announcements for confirmed deadlines.
+:::
+
+## Course Timeline
+
+| Date | Event |
+|------|-------|
+| **Week 1** | Course begins; Introduction and Logistics |
+| **Week 3** | Assignment 1 released |
+| **Week 5** | Assignment 1 due |
+| **Week 5** | **Quiz 1** |
+| **Week 6** | Assignment 2 released |
+| **Week 8** | Assignment 2 due |
+| **Week 9** | **Quiz 2 (Mid-semester)** |
+| **Week 10** | Assignment 3 released |
+| **Week 12** | Assignment 3 due |
+| **Week 12** | **Quiz 3** |
+| **Week 13** | Assignment 4 released |
+| **Week 15** | Assignment 4 due |
+| **Week 16** | **Quiz 4 (End-semester)** |
+
+::: {.callout-note}
+## Note
+Exact dates will be announced once the academic calendar for August 2026 is finalized. All deadlines will be posted on Slack.
+:::

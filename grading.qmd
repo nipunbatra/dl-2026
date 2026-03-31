@@ -1,0 +1,97 @@
+---
+title: "Grading Policy"
+---
+
+::: {.callout-warning}
+## Notice
+This grading policy is **tentative** and subject to change. Final details will be confirmed at the start of the semester.
+:::
+
+## Grade Distribution
+
+### Quizzes: 48%
+- **16% each** (4 quizzes total)
+- **Best 3 out of 4** quizzes count toward final grade
+- **No makeup quizzes** for any reason
+- Missing a quiz = 0% for that quiz
+
+::: {.callout-note}
+## Quiz Schedule
+- 2 quizzes during mid-semester period
+- 2 quizzes during end-semester period
+- Mix of MCQs and subjective questions
+- **Closed book** examinations
+:::
+
+---
+
+### Assignments: 40%
+- **4–5 assignments** throughout the semester
+- **Group work** (team size TBA)
+- **Variable weights** (8–12% each)
+- At least one **implementation project** per assignment
+
+**Assignment Features:**
+
+- PyTorch-based implementations
+- Jupyter notebook submissions
+- Viva voce evaluation
+
+**Grade Breakdown per Assignment:**
+
+| Component | Weight |
+|-----------|--------|
+| Code functionality | 50% |
+| Understanding (viva) | 25% |
+| Code quality | 12.5% |
+| Theory concepts | 12.5% |
+
+---
+
+### Attendance: 6%
+
+| Absences | Grade |
+|----------|-------|
+| ≤ 4      | 6%    |
+| 5–6      | 5%    |
+| 7–8      | 4%    |
+| 9–10     | 1%    |
+| > 10     | 0%    |
+
+It is the student's responsibility to ensure attendance is recorded on the biometric system.
+
+::: {.callout-tip}
+## Leave Requests
+There is no leave request system. If you miss a class, it counts as an absence. No need to inform the instructor or provide medical certificates.
+
+In case a student has to miss 4 or more classes in a row due to an emergency, they can discuss with the instructor for special consideration.
+:::
+
+---
+
+### Bonus Points (Up to 6%)
+
+::: {.callout-note}
+## Class Participation — Up to 1%
+- **0.5% per question** answered in class (max 2 questions)
+- At instructor's discretion
+:::
+
+::: {.callout-note}
+## Kaggle Competition — Up to 3%
+Subject to availability during the semester.
+
+| Performance | Bonus |
+|-------------|-------|
+| Participation | 0.5% |
+| 50th percentile | 1.0% |
+| 75th percentile | 1.5% |
+| 90th percentile | 2.0% |
+| 95th percentile | 2.5% |
+| **Top 3** | **3.0%** |
+:::
+
+::: {.callout-note}
+## Paper Presentation — Up to 2%
+Present a recent deep learning paper (from NeurIPS, ICML, ICLR, CVPR, etc.) to the class. Details TBA.
+:::

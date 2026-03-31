@@ -1,0 +1,48 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "ES 667: Deep Learning"
+  description: "Deep Learning course at IIT Gandhinagar, August 2026"
+  navbar:
+    background: "#ffffff"
+    foreground: "#333333"
+    title: "ES 667: Deep Learning"
+    right:
+      - href: index.qmd
+        text: Home
+      - href: schedule.qmd
+        text: Schedule
+      - href: grading.qmd
+        text: Grading
+      - href: faq.qmd
+        text: FAQ
+      - href: deadlines.qmd
+        text: Deadlines
+      - href: https://nipunbatra.github.io
+        text: Instructor
+  page-footer:
+    left: "ES 667: Deep Learning | IIT Gandhinagar | August 2026"
+    center: "© 2026 Nipun Batra"
+    right: "Made with [Quarto](https://quarto.org) | [Prof. Nipun Batra](https://nipunbatra.github.io)"
+    background: "#f8fafc"
+
+format:
+  html:
+    theme: [cosmo, styles.scss]
+    css: [styles.scss]
+    toc: false
+    page-layout: full
+    smooth-scroll: true
+    highlight-style: github
+    mainfont: "Inter, system-ui, -apple-system, sans-serif"
+    monofont: "JetBrains Mono, Monaco, Consolas, monospace"
+    code-copy: true
+    code-overflow: wrap
+    link-external-newwindow: true
+    anchor-sections: true
+    fig-responsive: true
+
+execute:
+  freeze: auto
