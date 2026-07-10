@@ -1,121 +1,33 @@
 ---
-title: "Frequently Asked Questions"
+title: "FAQ"
 ---
 
-## Course Structure
-
 ::: {.callout-note collapse="true"}
-## Is there a project component?
-**Yes and No.** Each assignment includes a project-like implementation question. This means:
-
-- All students work on similar, well-defined problems
-- You get hands-on experience with real deep learning implementations
-- No separate final project required
+## Is there a final project?
+No separate final project. Each of the **three assignments** is a substantial programming task, so you get project-scale practice throughout the semester.
 :::
 
 ::: {.callout-note collapse="true"}
-## What programming language and framework do we use?
-**Python** with **PyTorch**. All assignments must be completed in Python using PyTorch. No other frameworks (TensorFlow, JAX, etc.) unless explicitly allowed.
+## How are assignments graded?
+You submit code by the deadline, then take a **short individual quiz / viva** on your own submission. The viva is where the marks are decided — be ready to explain your code, your plots, and your choices. See [Grading](grading.qmd).
+:::
+
+::: {.callout-note collapse="true"}
+## Language and framework?
+**Python + PyTorch.** No other frameworks (TensorFlow, JAX, …) unless explicitly allowed.
 :::
 
 ::: {.callout-note collapse="true"}
 ## Do I need a GPU?
-Not for all assignments, but some will benefit from GPU acceleration. Cloud compute credits (Google Cloud / Colab) will be provided. Details TBA.
-:::
-
----
-
-## Prerequisites
-
-::: {.callout-note collapse="true"}
-## What background do I need?
-While there are no formal prerequisites, you should be comfortable with:
-
-- **Python Programming** — NumPy, matplotlib, basic OOP
-- **Linear Algebra** — vectors, matrices, eigenvalues
-- **Calculus** — partial derivatives, chain rule
-- **Probability & Statistics** — distributions, expectations, Bayes' rule
+Not for everything, but some assignments benefit from one. A free Colab GPU is enough; any extra compute credits will be announced on Slack.
 :::
 
 ::: {.callout-note collapse="true"}
-## I haven't taken a Machine Learning course. Can I still take this?
-Yes, but expect to put in extra effort in the first few weeks. The course covers the necessary ML foundations before moving to deep learning topics.
-:::
-
----
-
-## Quizzes
-
-::: {.callout-note collapse="true"}
-## What happens if I miss a quiz?
-Quiz score = **0%**. The "best 3 out of 4" policy accommodates one missed quiz. **No makeup quizzes** for any reason.
+## Where are the slides and notebooks?
+On the **[course materials site](https://nipunbatra.github.io/dl-teaching/)** — lecture decks, runnable notebooks, and assignments.
 :::
 
 ::: {.callout-note collapse="true"}
-## Are quizzes open book?
-**No.** All quizzes are **closed book**. No notes, no electronic devices.
-:::
-
-::: {.callout-note collapse="true"}
-## What is the quiz format?
-Mix of **MCQs and subjective questions**. May include mathematical derivations, architecture diagrams, and conceptual questions.
-:::
-
----
-
-## Assignments
-
-::: {.callout-warning collapse="true"}
-## What if I miss an assignment deadline?
-**No extensions** are granted for any reason.
-:::
-
-::: {.callout-note collapse="true"}
-## How are assignments evaluated?
-**Viva Voce Process:**
-
-1. TAs compare submitted code with live demonstration
-2. **No changes allowed** during viva
-3. Code demonstration and Q&A session
-
-**Grade Breakdown:**
-
-- Code functionality: **50%**
-- Understanding (viva): **25%**
-- Code quality: **12.5%**
-- Theory concepts: **12.5%**
-:::
-
-::: {.callout-note collapse="true"}
-## Individual or group work?
-**Group assignments.** All team members receive the same grade. Team size TBA.
-:::
-
----
-
-## Classroom Policies
-
-::: {.callout-warning collapse="true"}
-## Can I use my laptop in class?
-**No.** Laptops are **not permitted** in class for any reason.
-:::
-
-::: {.callout-note collapse="true"}
-## What's the attendance policy?
-See the detailed [attendance policy](./grading.qmd#attendance) in the grading section.
-:::
-
----
-
-## Audit Policy
-
-::: {.callout-note collapse="true"}
-## Can I audit the course?
-**Lecture Attendance:** Free to attend all lectures.
-
-**Limitations:**
-
-- No assignment grading (limited TA capacity)
-- Cannot formally join assignment teams
-- No official course credit
+## Can I use AI tools?
+Yes, honestly and with meaningful assistance documented. What is assessed is your ability to explain your own work in the viva, which no tool can do for you.
 :::

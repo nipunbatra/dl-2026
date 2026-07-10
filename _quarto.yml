@@ -16,14 +16,14 @@ website:
         text: Schedule
       - href: grading.qmd
         text: Grading
-      - href: faq.qmd
-        text: FAQ
       - href: deadlines.qmd
         text: Deadlines
+      - href: faq.qmd
+        text: FAQ
+      - href: https://nipunbatra.github.io/dl-teaching/
+        text: "Materials ↗"
       - href: https://join.slack.com/t/dl26workspace/shared_invite/zt-43b3v79vb-bVZl1_sJVCrBkVMDsq5TYA
-        text: Join Slack
-      - href: https://nipunbatra.github.io
-        text: Instructor
+        text: Slack
   page-footer:
     left: "ES 667: Deep Learning | IIT Gandhinagar | August 2026"
     center: "© 2026 Nipun Batra"

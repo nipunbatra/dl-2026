@@ -1,31 +1,24 @@
 ---
-title: "Important Deadlines"
+title: "Deadlines"
 ---
 
 ::: {.callout-warning}
-## Notice
-All dates below are **tentative** and subject to change. Check course announcements for confirmed deadlines.
+All dates are **tentative** until the August 2026 academic calendar is finalized. Confirmed dates are posted on Slack.
 :::
 
-## Course Timeline
+Three assignments and three quizzes (best two count). Each assignment deadline is followed by a short individual viva.
 
-| Date | Event |
-|------|-------|
-| **Week 1** | Course begins; Introduction and Logistics |
-| **Week 3** | Assignment 1 released |
-| **Week 5** | Assignment 1 due |
-| **Week 5** | **Quiz 1** |
-| **Week 6** | Assignment 2 released |
-| **Week 8** | Assignment 2 due |
-| **Week 9** | **Quiz 2 (Mid-semester)** |
-| **Week 10** | Assignment 3 released |
-| **Week 12** | Assignment 3 due |
-| **Week 12** | **Quiz 3** |
-| **Week 13** | Assignment 4 released |
-| **Week 15** | Assignment 4 due |
-| **Week 16** | **Quiz 4 (End-semester)** |
+| Week | Event |
+|:---:|---|
+| 1 | Course begins |
+| 3 | Assignment 1 released |
+| 5 | **Assignment 1 due** → individual viva |
+| 6 | **Quiz 1** |
+| 7 | Assignment 2 released |
+| 9 | **Assignment 2 due** → individual viva |
+| 10 | **Quiz 2** (mid-semester) |
+| 11 | Assignment 3 released |
+| 13 | **Assignment 3 due** → individual viva |
+| 15 | **Quiz 3** (end-semester) |
 
-::: {.callout-note}
-## Note
-Exact dates will be announced once the academic calendar for August 2026 is finalized. All deadlines will be posted on Slack.
-:::
+See [Grading](grading.qmd) for how these count.

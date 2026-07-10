@@ -1,95 +1,37 @@
 ---
 title: "ES 667: Deep Learning"
-subtitle: "August 2026 | IIT Gandhinagar"
+subtitle: "IIT Gandhinagar · August 2026 · Prof. Nipun Batra"
 ---
 
-## Welcome to ES 667: Deep Learning
-
-::: {.callout-note}
-## Course Information
-
-**Course Code:** ES 667
-**Credits:** 3-0-0-4
-**Prerequisites:** Nil (familiarity with linear algebra, calculus, probability, and Python programming is strongly recommended)
-**Offered:** Each Year
-
-**Instructor:** [Prof. Nipun Batra](https://nipunbatra.github.io)
-Email: nipun.batra@iitgn.ac.in
-Office: 13/401C
-[Directions to office](https://www.youtube.com/shorts/FmCbCkJQN1g)
-
-**Venue:** TBA
-
-**Teaching Assistants:** TBA
-:::
+A ground-up, full-semester course that builds the modern deep-learning stack — from the probability under every loss, through CNNs and Transformers, to LLMs and diffusion.
 
 ::: {.callout-tip}
-## Course communication
-
-Announcements, deadline updates, and course questions live in the **[ES 667 Slack workspace](https://join.slack.com/t/dl26workspace/shared_invite/zt-43b3v79vb-bVZl1_sJVCrBkVMDsq5TYA)**. Join before the first week of class.
+## Course materials
+Lecture decks, runnable notebooks, and assignments live on the **[course materials site ↗](https://nipunbatra.github.io/dl-teaching/)**. This page is just the logistics: [schedule](schedule.qmd), [grading](grading.qmd), [deadlines](deadlines.qmd), and [FAQ](faq.qmd).
 :::
 
-## Course Overview
+::: {.callout-note}
+## At a glance
+**Code:** ES 667 · **Credits:** 3-0-0-4 · **Offered:** annually
+**Prerequisites:** none — but linear algebra, calculus, probability, and Python are strongly recommended.
+**Instructor:** [Prof. Nipun Batra](https://nipunbatra.github.io) · nipun.batra@iitgn.ac.in · Office 13/401C
+**Venue / TAs:** TBA
+:::
 
-This course covers the fundamentals and advanced topics in deep learning, from the mathematical foundations through modern generative AI architectures. Students will gain both theoretical understanding and practical implementation skills using PyTorch.
+## Communication
 
-**Topics include:**
+Announcements, deadlines, and questions live in the **[ES 667 Slack workspace](https://join.slack.com/t/dl26workspace/shared_invite/zt-43b3v79vb-bVZl1_sJVCrBkVMDsq5TYA)** — join before the first week.
 
-- Mathematics for Deep Learning (Calculus, Linear Algebra, Probability)
-- Multi-Layer Perceptrons, Backpropagation, Universal Approximation Theorem
-- Optimization (SGD, Momentum, AdaGrad, Adam, RMSProp)
-- Regularisation (L1/L2, Dropout, DropBlock, Batch Normalization, Data Augmentation)
-- Convolutional Neural Networks (LeNet-5, VGG-16, AlexNet, GoogLeNet, InceptionNet, ResNet)
-- Recurrent Neural Networks, LSTMs, and variants
-- Generative Adversarial Networks (GANs)
-- Variational Autoencoders (VAEs)
-- Diffusion Models
-- Attention Mechanism and Transformers
-- Normalising Flows
-- Graph Neural Networks
-- Transfer Learning, Domain Adaptation, Self-Supervised Learning
-- Neural Tangent Kernel, Uncertainty Quantification
+## What you'll learn
 
-
-## Recommended Background
-
-While there are no formal prerequisites, the following background will be very helpful:
-
-- **Python Programming** — comfortable with NumPy, matplotlib, and basic OOP
-- **Linear Algebra** — vectors, matrices, eigenvalues, SVD
-- **Calculus** — partial derivatives, chain rule, gradients
-- **Probability & Statistics** — distributions, Bayes' rule, expectations
-
+Foundations (losses, backprop) → optimization & regularization → CNNs → sequences & Transformers → representation & multimodal learning → generative models (VAEs, GANs, diffusion) → efficient systems. The full module map and lecture list is on the [materials site](https://nipunbatra.github.io/dl-teaching/slides.html); assessment is **three programming assignments** and **quizzes** (see [Grading](grading.qmd)).
 
 ## Textbooks
 
-**Primary References:**
+No book is required; these three carry most of the course, all free online:
 
-1. **Deep Learning: Foundations and Concepts** — Bishop & Bishop, Springer 2024
-2. **Understanding Deep Learning** — Simon J.D. Prince, MIT Press 2023 — [Free Online](https://udlbook.github.io/udlbook/)
-3. **Deep Learning: A Visual Approach** — Andrew Glassner, No Starch Press 2021
-4. **The Principles of Deep Learning Theory** — Roberts, Yaida & Hanin, Cambridge 2022 — [arXiv](https://arxiv.org/abs/2106.10165v1)
-5. **Deep Learning** — Goodfellow, Bengio & Courville, MIT Press 2016 — [Free Online](https://www.deeplearningbook.org/)
-6. **Dive into Deep Learning** — Zhang, Lipton, Li & Smola, 2020 — [Free Online](https://d2l.ai/)
-7. **Alice's Adventures in a Differentiable Wonderland** — Simone Scardapane, 2024
-8. **Neural Networks and Deep Learning** — Michael Nielsen, 2015 — [Free Online](http://neuralnetworksanddeeplearning.com/)
+1. **Understanding Deep Learning** — Prince, MIT Press 2023 · [free](https://udlbook.github.io/udlbook/)
+2. **Deep Learning: Foundations and Concepts** — Bishop & Bishop, Springer 2024
+3. **Dive into Deep Learning** — Zhang, Lipton, Li & Smola · [free](https://d2l.ai/)
 
-
-**Additional References:**
-
-- **A Brief Introduction to Neural Networks** — David Kriesel — [Free Online](http://www.dkriesel.com/en/science/neural_networks)
-- **Patterns, Predictions, and Actions** — Hardt & Recht, 2021 — [Free Online](https://mlstory.org/)
-- **Graph Representation Learning** — William L. Hamilton, 2020
-- **Deep Learning with PyTorch** — Stevens, Antiga & Viehmann, Manning 2020 — [Free PDF](https://pytorch.org/assets/deep-learning/Deep-Learning-with-PyTorch.pdf)
-- **Theory of Deep Learning** — Raman Arora et al., Draft 2021
-
-
-## Learning Outcomes
-
-At the end of the course, students will be able to:
-
-- Understand the mathematical foundations and principles of deep learning
-- Design and implement deep neural network architectures (MLP, CNN, RNN, Transformers, GANs, VAEs, Diffusion Models)
-- Apply optimization and regularisation techniques effectively
-- Use modern deep learning frameworks (PyTorch) for practical problem solving
-- Apply deep learning to research problems in sustainability, computer vision, NLP, signal processing, bioinformatics, climate modeling, and other domains
+A fuller reading list is on the materials site's [Resources](https://nipunbatra.github.io/dl-teaching/resources.html) page.

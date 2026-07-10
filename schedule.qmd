@@ -3,58 +3,25 @@ title: "Schedule"
 ---
 
 ::: {.callout-warning}
-## Notice
-This schedule is **tentative** and subject to change. Topics may shift based on class pace and student interest. Check course announcements for updates.
+Tentative — dates land once the August 2026 calendar is set. Updates on Slack.
 :::
 
-| Lec # | Date | Topic | Reading |
-|:-----:|:----:|:------|:--------|
-| | **Module 1: Foundations** | | |
-| 1 | TBA | Introduction and Logistics; Why Deep Learning? | Goodfellow Ch. 1; Prince Ch. 1 |
-| 2 | TBA | Math Review: Linear Algebra and Calculus | Goodfellow Ch. 2–4; Bishop Ch. 1 |
-| 3 | TBA | Math Review: Probability and Information Theory | Goodfellow Ch. 3; Prince Ch. 2 |
-| 4 | TBA | Classification and Regression Problems | Bishop Ch. 2; Prince Ch. 2 |
-| | **Module 2: Deep Learning Basics** | | |
-| 5 | TBA | Multi-Layer Perceptron (MLP) | Goodfellow Ch. 6; Prince Ch. 3–4 |
-| 6 | TBA | Universal Approximation Theorem | Nielsen Ch. 4; Scardapane Ch. 3 |
-| 7 | TBA | Deep MLP and Backpropagation | Goodfellow Ch. 6.5; Prince Ch. 7 |
-| 8 | TBA | Implementation: Training, Validation, Testing | d2l.ai Ch. 3–4 |
-| 9 | TBA | **Quiz 1** | |
-| | **Module 3: Optimisation** | | |
-| 10 | TBA | Gradient Descent and Stochastic Gradient Descent | Goodfellow Ch. 8; Prince Ch. 9 |
-| 11 | TBA | Momentum, AdaGrad, RMSProp | d2l.ai Ch. 12; Scardapane Ch. 5 |
-| 12 | TBA | Adam and Learning Rate Scheduling | Goodfellow Ch. 8; Prince Ch. 9 |
-| | **Module 4: Regularisation** | | |
-| 13 | TBA | L1/L2 Regularisation, Data Augmentation | Goodfellow Ch. 7; Prince Ch. 9 |
-| 14 | TBA | Dropout, DropBlock, Batch Normalization | Goodfellow Ch. 7; Prince Ch. 9 |
-| | **Module 5: Convolutional Neural Networks** | | |
-| 15 | TBA | Convolutional Neural Networks: Foundations | Goodfellow Ch. 9; Prince Ch. 10 |
-| 16 | TBA | CNN Architectures: LeNet-5, AlexNet, VGG-16 | d2l.ai Ch. 8 |
-| 17 | TBA | GoogLeNet, InceptionNet, ResNet | d2l.ai Ch. 8; Prince Ch. 11 |
-| 18 | TBA | Recent CNN Advances and Applications | |
-| 19 | TBA | **Quiz 2 (Mid-semester)** | |
-| | **Module 6: Sequence Models** | | |
-| 20 | TBA | Recurrent Neural Networks (RNN) | Goodfellow Ch. 10; Prince Ch. 12 |
-| 21 | TBA | Long Short-Term Memory (LSTM) and Variants | Goodfellow Ch. 10; d2l.ai Ch. 10 |
-| | **Module 7: Generative AI** | | |
-| 22 | TBA | Autoencoders and Variational Autoencoders (VAE) | Goodfellow Ch. 14; Prince Ch. 17 |
-| 23 | TBA | Generative Adversarial Networks (GAN) | Goodfellow Ch. 20; Prince Ch. 15 |
-| 24 | TBA | Selected GAN Architectures and Applications | d2l.ai Ch. 20 |
-| 25 | TBA | Diffusion Models | Prince Ch. 18 |
-| 26 | TBA | Diffusion Models: Applications | |
-| 27 | TBA | Normalising Flows | Prince Ch. 16 |
-| 28 | TBA | **Quiz 3** | |
-| | **Module 8: Attention and Transformers** | | |
-| 29 | TBA | Attention Mechanism | d2l.ai Ch. 11; Prince Ch. 12 |
-| 30 | TBA | Transformers: Architecture and Training | Vaswani et al. (2017); Prince Ch. 12 |
-| 31 | TBA | Transformer Applications (Vision, NLP) | |
-| | **Module 9: Advanced Topics** | | |
-| 32 | TBA | Transfer Learning and Domain Adaptation | |
-| 33 | TBA | Graph Neural Networks and Embeddings | Hamilton (2020) |
-| 34 | TBA | Self-Supervised Learning | |
-| 35 | TBA | Neural Tangent Kernel; Uncertainty Quantification | Roberts et al. (2022) |
-| 36 | TBA | 3D CNNs; Tips and Tricks for DNN Performance | |
-| | **Module 10: Applications & Wrap-up** | | |
-| 37 | TBA | Applications: Vision, NLP, Climate, Sustainability | |
-| 38 | TBA | Recent Advances and Course Recap | |
-| 39 | TBA | **Quiz 4 (End-semester)** | |
+Twenty-five meetings across eight modules. Full lecture titles and slides are on the [materials site ↗](https://nipunbatra.github.io/dl-teaching/slides.html).
+
+| Module | Meetings | The question it answers |
+|---|:---:|---|
+| Foundations | 1–4 | Why these losses, and how do we differentiate a network? |
+| Optimization & training | 5–7 | How do we train deep nets reliably and make them generalize? |
+| Computer vision | 8–11 | How do locality and hierarchy change the model? |
+| Sequences & language | 12–15 | How do models represent and generate ordered data? |
+| Transformers | 16–17 | How does attention become a scalable architecture? |
+| Representation & multimodal | 18–19 | How can data supervise itself, and how do images meet text? |
+| Generative modeling | 20–23 | How do VAEs, GANs, and diffusion generate? |
+| Systems & synthesis | 24–25 | How do we serve models efficiently — and what survives the whole course? |
+
+## Assessment through the term
+
+- **Assignment 1** after Optimization · **Assignment 2** after Vision/Sequences · **Assignment 3** after Transformers/Generative.
+- **Quiz 1** (~Optimization) · **Quiz 2** (mid-semester, ~Transformers) · **Quiz 3** (end-semester). Best two of three count.
+
+Exact weeks are on the [Deadlines](deadlines.qmd) page.
