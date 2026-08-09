@@ -1,37 +1,36 @@
 ---
 title: "ES 667: Deep Learning"
-subtitle: "IIT Gandhinagar · August 2026 · Prof. Nipun Batra"
+subtitle: "IIT Gandhinagar · August 2026"
 ---
 
-A ground-up, full-semester course that builds the modern deep-learning stack — from the probability under every loss, through CNNs and Transformers, to LLMs and diffusion.
+- **Instructor:** [Prof. Nipun Batra](https://nipunbatra.github.io)
+- **Email:** nipun.batra@iitgn.ac.in
+- **Office:** 13/401C
+- **Credits:** 3-0-0-4
 
-::: {.callout-tip}
-## Course materials
-Lecture decks, runnable notebooks, and assignments live on the **[course materials site ↗](https://nipunbatra.github.io/dl-teaching/)**. This page is just the logistics: [schedule](schedule.qmd), [grading](grading.qmd), [deadlines](deadlines.qmd), and [FAQ](faq.qmd).
-:::
+ES 667 develops deep-learning models from their statistical and computational foundations. The course begins with likelihood, loss functions, and multilayer networks, and proceeds to convolutional models, sequence models, Transformers, representation learning, and generative models.
 
-::: {.callout-note}
-## At a glance
-**Code:** ES 667 · **Credits:** 3-0-0-4 · **Offered:** annually
-**Prerequisites:** none — but linear algebra, calculus, probability, and Python are strongly recommended.
-**Instructor:** [Prof. Nipun Batra](https://nipunbatra.github.io) · nipun.batra@iitgn.ac.in · Office 13/401C
-**Venue / TAs:** TBA
-:::
+## Recent and upcoming classes
 
-## Communication
+| Date | Class | Material |
+|---|---|---|
+| Tuesday, 4 August 2026 | Lecture 1, part I | [Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) |
+| Friday, 7 August 2026 | Lecture 1, part II | [Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) |
+| **Tuesday, 11 August 2026** | Finish Lecture 1; work through the PyTorch companion notebook | [Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) · [Notebook](https://nipunbatra.github.io/dl-teaching/notebooks/L01/00_likelihood_iid_worked_examples.html) · [IPYNB](https://nipunbatra.github.io/dl-teaching/notebooks/L01/00_likelihood_iid_worked_examples.ipynb) |
 
-Announcements, deadlines, and questions live in the **[ES 667 Slack workspace](https://join.slack.com/t/dl26workspace/shared_invite/zt-43b3v79vb-bVZl1_sJVCrBkVMDsq5TYA)** — join before the first week.
+The same Lecture 1 deck is used across these three meetings. On 11 August we will complete the remaining material and study likelihood, MLE, regression, classification, and MAP through executable examples.
 
-## What you'll learn
+## Course links
 
-Foundations (losses, backprop) → optimization & regularization → CNNs → sequences & Transformers → representation & multimodal learning → generative models (VAEs, GANs, diffusion) → efficient systems. The full module map and lecture list is on the [materials site](https://nipunbatra.github.io/dl-teaching/slides.html); assessment is **three programming assignments** and **quizzes** (see [Grading](grading.qmd)).
+- [Schedule](schedule.qmd)
+- [Lecture slides and notebooks](https://nipunbatra.github.io/dl-teaching/)
+- [Grading](grading.qmd) and [deadlines](deadlines.qmd)
+- [Slack workspace](https://join.slack.com/t/dl26workspace/shared_invite/zt-43b3v79vb-bVZl1_sJVCrBkVMDsq5TYA)
 
-## Textbooks
+## References
 
-No book is required; these three carry most of the course, all free online:
+There is no required textbook. Useful references include:
 
-1. **Understanding Deep Learning** — Prince, MIT Press 2023 · [free](https://udlbook.github.io/udlbook/)
-2. **Deep Learning: Foundations and Concepts** — Bishop & Bishop, Springer 2024
-3. **Dive into Deep Learning** — Zhang, Lipton, Li & Smola · [free](https://d2l.ai/)
-
-A fuller reading list is on the materials site's [Resources](https://nipunbatra.github.io/dl-teaching/resources.html) page.
+- Simon J. D. Prince, *Understanding Deep Learning* ([online edition](https://udlbook.github.io/udlbook/))
+- Christopher M. Bishop and Hugh Bishop, *Deep Learning: Foundations and Concepts*
+- Aston Zhang, Zachary C. Lipton, Mu Li, and Alexander J. Smola, *Dive into Deep Learning* ([online edition](https://d2l.ai/))

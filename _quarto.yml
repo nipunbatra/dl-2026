@@ -3,13 +3,11 @@ project:
   output-dir: docs
 
 website:
-  title: "ES 667: Deep Learning"
-  description: "Deep Learning course at IIT Gandhinagar, August 2026"
+  title: "ES 667 · Deep Learning"
+  description: "Deep Learning at IIT Gandhinagar, August 2026"
   navbar:
-    background: "#ffffff"
-    foreground: "#333333"
-    title: "ES 667: Deep Learning"
-    right:
+    title: "ES 667"
+    left:
       - href: index.qmd
         text: Home
       - href: schedule.qmd
@@ -21,30 +19,17 @@ website:
       - href: faq.qmd
         text: FAQ
       - href: https://nipunbatra.github.io/dl-teaching/
-        text: "Materials ↗"
-      - href: https://join.slack.com/t/dl26workspace/shared_invite/zt-43b3v79vb-bVZl1_sJVCrBkVMDsq5TYA
-        text: Slack
+        text: Materials
   page-footer:
-    left: "ES 667: Deep Learning | IIT Gandhinagar | August 2026"
-    center: "© 2026 Nipun Batra"
-    right: "Made with [Quarto](https://quarto.org) | [Prof. Nipun Batra](https://nipunbatra.github.io)"
-    background: "#f8fafc"
+    left: "Prof. Nipun Batra · IIT Gandhinagar"
+    right: "[Course materials](https://nipunbatra.github.io/dl-teaching/)"
 
 format:
   html:
     theme: [cosmo, styles.scss]
-    css: [styles.scss]
     toc: false
-    page-layout: full
-    smooth-scroll: true
-    highlight-style: github
-    mainfont: "Inter, system-ui, -apple-system, sans-serif"
-    monofont: "JetBrains Mono, Monaco, Consolas, monospace"
-    code-copy: true
-    code-overflow: wrap
+    page-layout: article
     link-external-newwindow: true
-    anchor-sections: true
-    fig-responsive: true
 
 execute:
   freeze: auto

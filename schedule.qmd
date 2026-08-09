@@ -2,26 +2,27 @@
 title: "Schedule"
 ---
 
-::: {.callout-warning}
-Tentative — dates land once the August 2026 calendar is set. Updates on Slack.
-:::
+Changes to the schedule will be announced on Slack. Lecture PDFs and notebooks are maintained on the [course-materials site](https://nipunbatra.github.io/dl-teaching/).
 
-Twenty-five meetings across eight modules. Full lecture titles and slides are on the [materials site ↗](https://nipunbatra.github.io/dl-teaching/slides.html).
+## Class record
 
-| Module | Meetings | The question it answers |
+| Date | Lecture | Topic and material |
+|---|---|---|
+| Tuesday, 4 August 2026 | L1, part I | [Where Deep Learning Losses Come From](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) |
+| Friday, 7 August 2026 | L1, part II | [Where Deep Learning Losses Come From](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) |
+| **Tuesday, 11 August 2026** | L1, conclusion | Complete the [L1 slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) and use the [PyTorch companion notebook](https://nipunbatra.github.io/dl-teaching/notebooks/L01/00_likelihood_iid_worked_examples.html) ([source](https://nipunbatra.github.io/dl-teaching/notebooks/L01/00_likelihood_iid_worked_examples.ipynb)) |
+
+## Course sequence
+
+| Module | Lectures | Main topics |
 |---|:---:|---|
-| Foundations | 1–4 | Why these losses, and how do we differentiate a network? |
-| Optimization & training | 5–7 | How do we train deep nets reliably and make them generalize? |
-| Computer vision | 8–11 | How do locality and hierarchy change the model? |
-| Sequences & language | 12–15 | How do models represent and generate ordered data? |
-| Transformers | 16–17 | How does attention become a scalable architecture? |
-| Representation & multimodal | 18–19 | How can data supervise itself, and how do images meet text? |
-| Generative modeling | 20–23 | How do VAEs, GANs, and diffusion generate? |
-| Systems & synthesis | 24–25 | How do we serve models efficiently — and what survives the whole course? |
+| Foundations | 1–4 | Likelihood and losses; neural networks; calculus; backpropagation |
+| Optimization and training | 5–7 | Optimization, trainability, and regularization |
+| Computer vision | 8–11 | Convolutional networks, transfer learning, detection, and segmentation |
+| Sequences and language | 12–15 | Language modelling, recurrent networks, convolutional sequence models, and attention |
+| Transformers | 16–17 | Self-attention and modern Transformer families |
+| Representation learning | 18–19 | Self-supervision, vision Transformers, and multimodal models |
+| Generative modelling | 20–23 | VAEs, GANs, and diffusion models |
+| Systems and synthesis | 24–25 | Efficient inference and course synthesis |
 
-## Assessment through the term
-
-- **Assignment 1** after Optimization · **Assignment 2** after Vision/Sequences · **Assignment 3** after Transformers/Generative.
-- **Quiz 1** (~Optimization) · **Quiz 2** (mid-semester, ~Transformers) · **Quiz 3** (end-semester). Best two of three count.
-
-Exact weeks are on the [Deadlines](deadlines.qmd) page.
+The detailed lecture list is available on the [lecture-decks page](https://nipunbatra.github.io/dl-teaching/slides.html).
