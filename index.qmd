@@ -16,9 +16,9 @@ ES 667 develops deep-learning models from their statistical and computational fo
 |---|---|---|
 | Tuesday, 4 August 2026 | Lecture 1, part I | [Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) |
 | Friday, 7 August 2026 | Lecture 1, part II | [Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) |
-| **Tuesday, 11 August 2026** | Finish Lecture 1; work through the PyTorch companion notebook | [Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) · [Notebook](https://nipunbatra.github.io/dl-teaching/notebooks/L01/00_likelihood_iid_worked_examples.html) · [IPYNB](https://nipunbatra.github.io/dl-teaching/notebooks/L01/00_likelihood_iid_worked_examples.ipynb) |
+| **Tuesday, 11 August 2026** | Finish Lecture 1; work through the PyTorch companion notebooks | [Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) · [Main notebook](https://nipunbatra.github.io/dl-teaching/notebooks/L01/00_likelihood_iid_worked_examples.html) · [Main Colab](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L01/00_likelihood_iid_worked_examples.ipynb) · [Robust notebook](https://nipunbatra.github.io/dl-teaching/notebooks/L01/03_robust_linear_regression.html) · [Robust Colab](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L01/03_robust_linear_regression.ipynb) |
 
-The same Lecture 1 deck is used across these three meetings. On 11 August we will complete the remaining material and study likelihood, MLE, regression, classification, and MAP through executable examples.
+The same Lecture 1 deck is used across these three meetings. On 11 August we will complete the remaining material and study likelihood, MLE, regression, classification, MAP, and robust observation models through executable examples.
 
 ## Course links
 
