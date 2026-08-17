@@ -2,23 +2,20 @@
 title: "Deadlines"
 ---
 
-::: {.callout-warning}
-All dates are **tentative** until the August 2026 academic calendar is finalized. Confirmed dates are posted on Slack.
-:::
+Three assignments and three quizzes (best two count). Each assignment deadline is followed by a short individual viva/Quiz.
 
-Three assignments and three quizzes (best two count). Each assignment deadline is followed by a short individual viva.
-
-| Week | Event |
-|:---:|---|
-| 1 | Course begins |
-| 3 | Assignment 1 released |
-| 5 | **Assignment 1 due** → individual viva |
-| 6 | **Quiz 1** |
-| 7 | Assignment 2 released |
-| 9 | **Assignment 2 due** → individual viva |
-| 10 | **Quiz 2** (mid-semester) |
-| 11 | Assignment 3 released |
-| 13 | **Assignment 3 due** → individual viva |
-| 15 | **Quiz 3** (end-semester) |
+| Date | Event |
+|---|---|
+| 04 Aug 26 | Course begins |
+| 17 Aug 26 | Add-Drop Period Ends |
+| 18 Aug 26 | Assignment 1 released |
+| 28 Aug 26 | Assignment 1 due |
+| 10 Sep 26 | **Quiz 1** |
+| 24 Sep 26 | Assignment 2 released |   
+| 01 Oct 26 | Assignment 2 due |
+| 15 Oct 26 | **Quiz 2** |
+| 16 Oct 26 | Assignment 3 released |
+| 02 Nov 26 | Assignment 3 due |
+| 10 Nov 26 | **Quiz 3**  |
 
 See [Grading](grading.qmd) for how these count.
