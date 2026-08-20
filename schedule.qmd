@@ -12,6 +12,10 @@ Changes to the schedule will be announced on Slack. Lecture PDFs and notebooks a
 | Friday, 7 August 2026 | L1, part II | [Where Deep Learning Losses Come From](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) |
 | **Tuesday, 11 August 2026** | L1, conclusion | Complete the [L1 slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf), then run the [main notebook in Colab](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L01/00_likelihood_iid_worked_examples.ipynb) and the [robust-regression notebook in Colab](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L01/03_robust_linear_regression.ipynb). Rendered versions: [main](https://nipunbatra.github.io/dl-teaching/notebooks/L01/00_likelihood_iid_worked_examples.html) · [robust](https://nipunbatra.github.io/dl-teaching/notebooks/L01/03_robust_linear_regression.html). |
 
+## Current lecture materials
+
+For **Computation Graphs, Backpropagation & Autodiff**, use the [handout](https://nipunbatra.github.io/dl-teaching/slides-pdf/L3.pdf), [presentation](https://nipunbatra.github.io/dl-teaching/slides-pdf/L3-presentation.pdf), and the single complete companion ([rendered notebook](https://nipunbatra.github.io/dl-teaching/notebooks/L03/00_backprop_autograd_complete.html) · [Colab](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L03/00_backprop_autograd_complete.ipynb)).
+
 ## Course sequence
 
 | Module | Lectures | Main topics |

@@ -20,6 +20,15 @@ ES 667 develops deep-learning models from their statistical and computational fo
 
 The same Lecture 1 deck is used across these three meetings. On 11 August we will complete the remaining material and study likelihood, MLE, regression, classification, MAP, and robust observation models through executable examples.
 
+## Current autograd companion
+
+**Computation Graphs, Backpropagation & Autodiff** now has one executable companion that follows the lecture from the scalar graph through dense layers, batches, an optimizer step, and a tiny MLP.
+
+- [Handout](https://nipunbatra.github.io/dl-teaching/slides-pdf/L3.pdf)
+- [Presentation](https://nipunbatra.github.io/dl-teaching/slides-pdf/L3-presentation.pdf)
+- [Rendered notebook](https://nipunbatra.github.io/dl-teaching/notebooks/L03/00_backprop_autograd_complete.html)
+- [Open the complete notebook in Colab](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L03/00_backprop_autograd_complete.ipynb)
+
 ## Course links
 
 - [Schedule](schedule.qmd)
