@@ -14,10 +14,10 @@ ES 667 develops deep-learning models from their statistical and computational fo
 
 **Generalization & Regularization**
 
-- [Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L7.pdf)
-- [Presentation mode](https://nipunbatra.github.io/dl-teaching/slides-pdf/L7-presentation.pdf)
-- [Two-page cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S10-cheatsheet.pdf)
-- Companion notebooks: [learning curves](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L07/01_overfitting_and_early_stopping.ipynb) · [dropout and regularization mechanisms](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L07/02_dropout_from_scratch.ipynb)
+- [▤ Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L7.pdf)
+- [▶ Presentation mode](https://nipunbatra.github.io/dl-teaching/slides-pdf/L7-presentation.pdf)
+- [★ Two-page cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S10-cheatsheet.pdf)
+- Companion notebooks: [⌨ learning curves](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L07/01_overfitting_and_early_stopping.ipynb) · [⌨ dropout and regularization mechanisms](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L07/02_dropout_from_scratch.ipynb)
 
 We will move from the train–validation gap to weight decay, early stopping, dropout, data augmentation, Mixup, and label smoothing.
 
