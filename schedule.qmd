@@ -1,32 +1,31 @@
 ---
-title: "Schedule"
+title: "Lecture library"
 ---
 
-Changes to the schedule will be announced on Slack. Lecture PDFs and notebooks are maintained on the [course-materials site](https://nipunbatra.github.io/dl-teaching/).
+Slides are the complete handouts; **Present** opens the classroom build, and
+each **Cheatsheet** is a two-page review guide.
 
-## Class record
+## Foundations
 
-| Date | Lecture | Topic and material |
-|---|---|---|
-| Tuesday, 4 August 2026 | L1, part I | [Where Deep Learning Losses Come From](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) |
-| Friday, 7 August 2026 | L1, part II | [Where Deep Learning Losses Come From](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) |
-| **Tuesday, 11 August 2026** | L1, conclusion | Complete the [L1 slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf), then run the [main notebook in Colab](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L01/00_likelihood_iid_worked_examples.ipynb) and the [robust-regression notebook in Colab](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L01/03_robust_linear_regression.ipynb). Rendered versions: [main](https://nipunbatra.github.io/dl-teaching/notebooks/L01/00_likelihood_iid_worked_examples.html) · [robust](https://nipunbatra.github.io/dl-teaching/notebooks/L01/03_robust_linear_regression.html). |
+| No. | Lecture | Resources |
+|---:|---|---|
+| 1 | **Where Deep Learning Losses Come From I** — distributions, likelihood, and loss | [Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) · [Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1-presentation.pdf) · [Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S01-cheatsheet.pdf) |
+| 2 | **Where Deep Learning Losses Come From II** — MLE, regression, and classification | [Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) · [Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1-presentation.pdf) · [Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S02-cheatsheet.pdf) |
+| 3 | **Likelihood to Loss in Practice** — MAP, regularization, and robust observation models | [Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) · [Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S03-cheatsheet.pdf) · [Likelihood notebook](https://nipunbatra.github.io/dl-teaching/notebooks/L01/00_likelihood_iid_worked_examples.html) · [Robust regression](https://nipunbatra.github.io/dl-teaching/notebooks/L01/03_robust_linear_regression.html) |
+| 4 | **From Linear Models to Neural Networks** — neurons, activations, multilayer networks, XOR, and approximation | [Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L2.pdf) · [Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L2-presentation.pdf) · [Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S04-cheatsheet.pdf) · [Linear GD](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L02/01_linear_regression_gd.ipynb) · [XOR](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L02/02_mlp_xor.ipynb) |
 
-## Current lecture materials
+## Gradients & optimization
 
-For **Computation Graphs, Backpropagation & Autodiff**, use the [handout](https://nipunbatra.github.io/dl-teaching/slides-pdf/L3.pdf), [presentation](https://nipunbatra.github.io/dl-teaching/slides-pdf/L3-presentation.pdf), the focused scalar-engine companion ([rendered](https://nipunbatra.github.io/dl-teaching/notebooks/L03/04_scalar_autograd_pytorch_to_scratch.html) · [Colab](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L03/04_scalar_autograd_pytorch_to_scratch.ipynb)), and the complete lecture companion ([rendered](https://nipunbatra.github.io/dl-teaching/notebooks/L03/00_backprop_autograd_complete.html) · [Colab](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L03/00_backprop_autograd_complete.ipynb)).
+| No. | Lecture | Resources |
+|---:|---|---|
+| 5 | **Optimization I — Gradient Estimates & Step Sizes** — batches, stochastic gradients, and optimizer geometry | [Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L5.pdf) · [Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L5-presentation.pdf) · [Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S05-cheatsheet.pdf) · [Recording](https://www.youtube.com/watch?v=CIdlYRSvnWQ) |
+| 6 | **Backpropagation & Autograd from Scratch** — computation graphs, reverse mode, and a scalar engine | [Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L3.pdf) · [Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L3-presentation.pdf) · [Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S06-cheatsheet.pdf) · [Colab](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L03/04_scalar_autograd_pytorch_to_scratch.ipynb) · [Recording](https://www.youtube.com/watch?v=I0Omc95jFiA) |
+| 7 | **Optimization II — Momentum, RMSProp & Adam** — moving averages and adaptive coordinate scaling | [Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L5.pdf) · [Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L5-presentation.pdf) · [Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S07-cheatsheet.pdf) · [Momentum](https://www.youtube.com/watch?v=ZaQ-gIYSv_A) · [RMSProp & Adam](https://www.youtube.com/watch?v=dobX7TW_DuE) |
+| 8 | **Vector, Matrix & Affine Autograd** — gradients, Jacobians, dense layers, and batched VJPs | [Calculus](https://nipunbatra.github.io/dl-teaching/slides-pdf/L3A.pdf) · [Autograd](https://nipunbatra.github.io/dl-teaching/slides-pdf/L3.pdf) · [Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S08-cheatsheet.pdf) · [Colab](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L03/00_backprop_autograd_complete.ipynb) |
+| 9 | **Valid Outputs by Design & Learning-Rate Schedules** — constrained parameters, warmup, decay, and cosine | [Valid outputs](https://nipunbatra.github.io/dl-teaching/slides-pdf/L5B.pdf) · [LR schedules](https://nipunbatra.github.io/dl-teaching/slides-pdf/L5C.pdf) · [Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S09-cheatsheet.pdf) |
 
-## Course sequence
+## Generalization
 
-| Module | Lectures | Main topics |
-|---|:---:|---|
-| Foundations | 1–4 | Likelihood and losses; neural networks; calculus; backpropagation |
-| Optimization and training | 5–7 | Optimization, trainability, and regularization |
-| Computer vision | 8–11 | Convolutional networks, transfer learning, detection, and segmentation |
-| Sequences and language | 12–15 | Language modelling, recurrent networks, convolutional sequence models, and attention |
-| Transformers | 16–17 | Self-attention and modern Transformer families |
-| Representation learning | 18–19 | Self-supervision, vision Transformers, and multimodal models |
-| Generative modelling | 20–23 | VAEs, GANs, and diffusion models |
-| Systems and synthesis | 24–25 | Efficient inference and course synthesis |
-
-The detailed lecture list is available on the [lecture-decks page](https://nipunbatra.github.io/dl-teaching/slides.html).
+| No. | Lecture | Resources |
+|---:|---|---|
+| **10** | **Generalization & Regularization** — learning curves, weight decay, early stopping, dropout, augmentation, Mixup, and label smoothing | [Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L7.pdf) · [Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L7-presentation.pdf) · [Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S10-cheatsheet.pdf) · [Learning curves](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L07/01_overfitting_and_early_stopping.ipynb) · [Mechanisms](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L07/02_dropout_from_scratch.ipynb) |

@@ -4,14 +4,14 @@ project:
 
 website:
   title: "ES 667 · Deep Learning"
-  description: "Deep Learning at IIT Gandhinagar, August 2026"
+  description: "Deep Learning at IIT Gandhinagar"
   navbar:
     title: "ES 667"
     left:
       - href: index.qmd
         text: Home
       - href: schedule.qmd
-        text: Schedule
+        text: Lectures
       - href: grading.qmd
         text: Grading
       - href: deadlines.qmd

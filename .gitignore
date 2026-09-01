@@ -6,3 +6,6 @@
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# Private teaching-date ledger; public pages use serial numbers only.
+/.course-dates.local.md
