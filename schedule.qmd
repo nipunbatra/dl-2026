@@ -6,16 +6,16 @@ Slides are the complete handouts; **Present** opens the classroom build, and
 each **Cheatsheet** is a two-page review guide.
 
 **Resource key:** ▤ handout · ▶ classroom presentation · ★ cheatsheet ·
-⌨ notebook · ◉ recording
+⌨ notebook · ◉ recording or 3-minute summary video
 
 ## Foundations
 
 | No. | Lecture | Resources |
 |---:|---|---|
-| 1 | **Where Deep Learning Losses Come From I** — distributions, likelihood, and loss | [▤ Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) · [▶ Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1-presentation.pdf) · [★ Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S01-cheatsheet.pdf) |
-| 2 | **Where Deep Learning Losses Come From II** — MLE, regression, and classification | [▤ Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) · [▶ Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1-presentation.pdf) · [★ Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S02-cheatsheet.pdf) |
-| 3 | **Likelihood to Loss in Practice** — MAP, regularization, and robust observation models | [▤ Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) · [★ Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S03-cheatsheet.pdf) · [⌨ Likelihood notebook](https://nipunbatra.github.io/dl-teaching/notebooks/L01/00_likelihood_iid_worked_examples.html) · [⌨ Robust regression](https://nipunbatra.github.io/dl-teaching/notebooks/L01/03_robust_linear_regression.html) |
-| 4 | **From Linear Models to Neural Networks** — neurons, activations, multilayer networks, XOR, and approximation | [▤ Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L2.pdf) · [▶ Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L2-presentation.pdf) · [★ Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S04-cheatsheet.pdf) · [⌨ Linear GD](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L02/01_linear_regression_gd.ipynb) · [⌨ XOR](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L02/02_mlp_xor.ipynb) |
+| 1 | **Where Deep Learning Losses Come From I** — distributions, likelihood, and loss | [▤ Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) · [▶ Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1-presentation.pdf) · [★ Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S01-cheatsheet.pdf) · [◉ 3-min summary](https://youtu.be/8-HcIIqmmsw) |
+| 2 | **Where Deep Learning Losses Come From II** — MLE, regression, and classification | [▤ Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) · [▶ Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1-presentation.pdf) · [★ Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S02-cheatsheet.pdf) · [◉ 3-min summary](https://youtu.be/HO9Tj5VUGfs) |
+| 3 | **Likelihood to Loss in Practice** — MAP, regularization, and robust observation models | [▤ Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) · [★ Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S03-cheatsheet.pdf) · [⌨ Likelihood notebook](https://nipunbatra.github.io/dl-teaching/notebooks/L01/00_likelihood_iid_worked_examples.html) · [⌨ Robust regression](https://nipunbatra.github.io/dl-teaching/notebooks/L01/03_robust_linear_regression.html) · [◉ Summary A](https://youtu.be/-au-iIaujvQ) · [◉ Summary B](https://youtu.be/fcjGaq5KWdM) |
+| 4 | **From Linear Models to Neural Networks** — neurons, activations, multilayer networks, XOR, and approximation | [▤ Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L2.pdf) · [▶ Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L2-presentation.pdf) · [★ Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S04-cheatsheet.pdf) · [⌨ Linear GD](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L02/01_linear_regression_gd.ipynb) · [⌨ XOR](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L02/02_mlp_xor.ipynb) · [◉ 3-min summary](https://youtu.be/kRBao9ic-Kk) |
 
 ## Gradients & optimization
 
