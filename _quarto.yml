@@ -3,12 +3,12 @@ project:
   output-dir: docs
 
 website:
-  title: "ES 667 · Deep Learning"
+  title: "ES 667 · Deep learning"
   favicon: favicon.svg
-  description: "Deep Learning at IIT Gandhinagar"
+  description: "Deep learning at IIT Gandhinagar, Semester I 2026-27"
   navbar:
-    title: "ES 667"
-    left:
+    title: "ES 667 · Deep learning"
+    right:
       - href: index.qmd
         text: Home
       - href: schedule.qmd
@@ -22,15 +22,24 @@ website:
       - href: https://nipunbatra.github.io/dl-teaching/
         text: Materials
   page-footer:
-    left: "Prof. Nipun Batra · IIT Gandhinagar"
-    right: "[Course materials](https://nipunbatra.github.io/dl-teaching/)"
+    left: "ES 667 Deep learning · IIT Gandhinagar · Semester I 2026-27"
+    right: "© 2026 [Nipun Batra](https://nipunbatra.github.io) · [Course materials](https://nipunbatra.github.io/dl-teaching/) · Made with [Quarto](https://quarto.org)"
 
 format:
   html:
-    theme: [cosmo, styles.scss]
+    from: markdown-smart
+    theme:
+      light: [cosmo, nb-course.scss]
+      dark: [darkly, nb-course.scss]
     toc: false
-    page-layout: article
+    page-layout: full
+    smooth-scroll: false
+    highlight-style: github
+    code-copy: true
+    code-overflow: wrap
     link-external-newwindow: true
+    anchor-sections: true
+    fig-responsive: true
 
 execute:
   freeze: auto

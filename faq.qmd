@@ -1,33 +1,39 @@
 ---
-title: "FAQ"
+title: "Frequently asked questions"
 ---
 
 ::: {.callout-note collapse="true"}
 ## Is there a final project?
-No separate final project. Each of the **three assignments** is a substantial programming task, so you get project-scale practice throughout the semester.
+No separate final project. Each of the three assignments is a substantial programming task, so you get project-scale
+practice throughout the semester.
 :::
 
 ::: {.callout-note collapse="true"}
 ## How are assignments graded?
-You submit code by the deadline, then take a **short individual quiz / viva** on your own submission. The viva is where the marks are decided — be ready to explain your code, your plots, and your choices. See [Grading](grading.qmd).
+You submit code by the deadline, then take a short individual quiz or viva on your own submission. The viva is where
+the marks are decided: be ready to explain your code, your plots and your choices. See [Grading](grading.qmd).
 :::
 
 ::: {.callout-note collapse="true"}
-## Language and framework?
-**Python + PyTorch.** No other frameworks (TensorFlow, JAX, …) unless explicitly allowed.
+## Which language and framework?
+Python and PyTorch. No other frameworks (such as TensorFlow or JAX) unless explicitly allowed.
 :::
 
 ::: {.callout-note collapse="true"}
 ## Do I need a GPU?
-Not for everything, but some assignments benefit from one. A free Colab GPU is enough; any extra compute credits will be announced on Slack.
+Not for everything, but some assignments benefit from one. A free Colab GPU is enough; any extra compute credits will
+be announced on Slack.
 :::
 
 ::: {.callout-note collapse="true"}
 ## Where are the slides and notebooks?
-On the **[course materials site](https://nipunbatra.github.io/dl-teaching/)** — lecture decks, runnable notebooks, and assignments.
+Each lecture's slides, notebooks, cheat sheet and summary videos are in the [lecture library](schedule.qmd). The
+[course materials site](https://nipunbatra.github.io/dl-teaching/) has the lecture decks, runnable notebooks and
+assignments.
 :::
 
 ::: {.callout-note collapse="true"}
 ## Can I use AI tools?
-Yes, honestly and with meaningful assistance documented. What is assessed is your ability to explain your own work in the viva, which no tool can do for you.
+Yes, honestly and with meaningful assistance documented. What is assessed is your ability to explain your own work in
+the viva, which no tool can do for you.
 :::
