@@ -3,43 +3,49 @@ title: "Grading"
 ---
 
 ::: {.callout-warning}
-This policy is **tentative** until the first week of class.
+## Tentative
+This policy is tentative until the first week of class.
 :::
 
-Everything is out of **100 marks**.
+Everything is out of 100 marks.
 
 | Component | Marks | How |
-|---|:---:|---|
-| **Quizzes** | **54** | Three quizzes; your **best two** count, **27 marks each**. |
-| **Assignments** | **39** | Three programming assignments, **13 marks each**. |
-| **Attendance** | **7** | Biometric-tracked (see below). |
+|:--|--:|:--|
+| Quizzes | 54 | Three quizzes; your best two count, 27 marks each. |
+| Assignments | 39 | Three programming assignments, 13 marks each. |
+| Attendance | 7 | Recorded on the biometric system (see below). |
 
-## Quizzes — 54
+## Quizzes: 54 marks
 
 - Three quizzes through the semester; the **best two of three** count, so a single bad day is forgiven.
-- **Closed book.** A mix of short conceptual questions and problems.
-- **No makeup quizzes** — a missed quiz is simply one of the dropped scores.
+- Closed book. A mix of short conceptual questions and problems.
+- **No makeup quizzes.** A missed quiz is simply one of the dropped scores.
 
-## Assignments — 39
+## Assignments: 39 marks
 
-- **Three** assignments, **13 marks each**, in **Python + PyTorch**. Each extends code you have already seen in a lecture notebook.
-- Each is a **programming** submission by the deadline.
-- **After the deadline**, every student takes a **short individual quiz / viva** on their own submission — you explain your code, your plots, and your choices. Your marks reflect that conversation, so submit work you can defend.
+- Three assignments, 13 marks each, in Python and PyTorch. Each extends code you have already seen in a lecture
+  notebook.
+- Each is a programming submission by the deadline.
+- **After the deadline**, every student takes a short individual quiz or viva on their own submission: you explain
+  your code, your plots and your choices. Your marks reflect that conversation, so submit work you can defend.
 
 ::: {.callout-note}
-Use AI tools honestly and document meaningful assistance. What is assessed is your ability to explain your own decisions and results in the viva.
+## AI tools
+Use AI tools honestly and document meaningful assistance. What is assessed is your ability to explain your own
+decisions and results in the viva.
 :::
 
-## Attendance — 7
+## Attendance: 7 marks
 
-Attendance is recorded on the **biometric system** — it is your responsibility to ensure it registers.
+Attendance is recorded on the biometric system; it is your responsibility to make sure it registers.
 
 | Classes missed | Marks |
-|:---:|:---:|
-| ≤ 4 | 7 |
-| 5–6 | 5 |
-| 7–8 | 3 |
-| 9–10 | 1 |
-| > 10 | 0 |
+|:--|--:|
+| 4 or fewer | 7 |
+| 5 to 6 | 5 |
+| 7 to 8 | 3 |
+| 9 to 10 | 1 |
+| More than 10 | 0 |
 
-There is no leave-request system; a missed class is an absence. For a genuine emergency that forces you to miss several classes in a row, talk to the instructor.
+There is no leave-request system; a missed class is an absence. For a genuine emergency that forces you to miss
+several classes in a row, talk to the instructor.

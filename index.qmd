@@ -1,30 +1,37 @@
 ---
-title: "ES 667: Deep Learning"
-subtitle: "IIT Gandhinagar · Semester I, 2026–27"
+title: "ES 667: Deep learning"
+subtitle: "Semester I 2026-27 · IIT Gandhinagar"
 ---
 
-- **Instructor:** [Prof. Nipun Batra](https://nipunbatra.github.io)
-- **Email:** nipun.batra@iitgn.ac.in
-- **Office:** 13/401C
-- **Credits:** 3-0-0-4
+::: {.lead}
+ES 667 develops deep learning models from their statistical and computational foundations. The course begins with
+likelihood, loss functions and multilayer networks, and proceeds to convolutional models, sequence models,
+Transformers, representation learning and generative models. Every lecture's slides, notebooks, cheat sheet and
+3-minute summary videos are in the [lecture library](schedule.qmd).
+:::
 
-ES 667 develops deep-learning models from their statistical and computational foundations. The course begins with likelihood, loss functions, and multilayer networks, and proceeds to convolutional models, sequence models, Transformers, representation learning, and generative models.
+::: {.callout-note}
+## Course information
+
+**Instructor:** [Prof. Nipun Batra](https://nipunbatra.github.io)\
+Email: nipun.batra@iitgn.ac.in\
+Office: 13/401C\
+Credits: 3-0-0-4
+:::
 
 ## Current class
 
-**Generalization & Regularization**
+**Generalization and regularization.** We will move from the train-validation gap to weight decay, early stopping,
+dropout, data augmentation, Mixup and label smoothing.
 
-- [▤ Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L7.pdf)
-- [▶ Presentation mode](https://nipunbatra.github.io/dl-teaching/slides-pdf/L7-presentation.pdf)
-- [★ Two-page cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S10-cheatsheet.pdf)
-- Companion notebooks: [⌨ learning curves](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L07/01_overfitting_and_early_stopping.ipynb) · [⌨ dropout and regularization mechanisms](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L07/02_dropout_from_scratch.ipynb)
-
-We will move from the train–validation gap to weight decay, early stopping, dropout, data augmentation, Mixup, and label smoothing.
+- [Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L7.pdf) and [presentation mode](https://nipunbatra.github.io/dl-teaching/slides-pdf/L7-presentation.pdf)
+- [Two-page cheat sheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S10-cheatsheet.pdf)
+- Companion notebooks: [learning curves](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L07/01_overfitting_and_early_stopping.ipynb) and [dropout and regularization mechanisms](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L07/02_dropout_from_scratch.ipynb)
 
 ## Attention and language
 
-- **Part 1: From characters to next-token prediction.** [▤ Interactive lecture](https://nipunbatra.github.io/attention/part1.html) · [▶ Presentation](https://nipunbatra.github.io/attention/part1.html?present) · [★ Two-page A4 cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/P01-cheatsheet.pdf)
-- **Part 2: Self-attention, from first principles.** [▤ Interactive lecture](https://nipunbatra.github.io/attention/attention.html) · [▶ Presentation](https://nipunbatra.github.io/attention/attention.html?present) · [★ Two-page A4 cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/P02-cheatsheet.pdf)
+- **Part 1: From characters to next-token prediction.** [Interactive lecture](https://nipunbatra.github.io/attention/part1.html) · [Presentation](https://nipunbatra.github.io/attention/part1.html?present) · [Two-page A4 cheat sheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/P01-cheatsheet.pdf)
+- **Part 2: Self-attention, from first principles.** [Interactive lecture](https://nipunbatra.github.io/attention/attention.html) · [Presentation](https://nipunbatra.github.io/attention/attention.html?present) · [Two-page A4 cheat sheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/P02-cheatsheet.pdf)
 
 ## Course links
 
@@ -39,4 +46,4 @@ There is no required textbook. Useful references include:
 
 - Simon J. D. Prince, *Understanding Deep Learning* ([online edition](https://udlbook.github.io/udlbook/))
 - Christopher M. Bishop and Hugh Bishop, *Deep Learning: Foundations and Concepts*
-- Aston Zhang, Zachary C. Lipton, Mu Li, and Alexander J. Smola, *Dive into Deep Learning* ([online edition](https://d2l.ai/))
+- Aston Zhang, Zachary C. Lipton, Mu Li and Alexander J. Smola, *Dive into Deep Learning* ([online edition](https://d2l.ai/))
