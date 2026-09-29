@@ -1,56 +1,358 @@
 ---
 title: "Lecture library"
+page-layout: full
+css: lecture-library.css
 ---
 
-Slides are the complete handouts; **Present** opens the classroom build, and
-each **Cheatsheet** is a two-page review guide.
-
-**Resource key:** ▤ handout · ▶ classroom presentation · ★ cheatsheet ·
-⌨ notebook · ◉ recording or 3-minute summary video
-
-## Foundations
-
-| No. | Lecture | Resources |
-|---:|---|---|
-| 1 | **Where Deep Learning Losses Come From I** — distributions, likelihood, and loss | [▤ Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) · [▶ Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1-presentation.pdf) · [★ Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S01-cheatsheet.pdf) · [◉ 3-min summary](https://youtu.be/8-HcIIqmmsw) |
-| 2 | **Where Deep Learning Losses Come From II** — MLE, regression, and classification | [▤ Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) · [▶ Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1-presentation.pdf) · [★ Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S02-cheatsheet.pdf) · [◉ 3-min summary](https://youtu.be/HO9Tj5VUGfs) |
-| 3 | **Likelihood to Loss in Practice** — MAP, regularization, and robust observation models | [▤ Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf) · [★ Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S03-cheatsheet.pdf) · [⌨ Likelihood notebook](https://nipunbatra.github.io/dl-teaching/notebooks/L01/00_likelihood_iid_worked_examples.html) · [⌨ Robust regression](https://nipunbatra.github.io/dl-teaching/notebooks/L01/03_robust_linear_regression.html) · [◉ Summary A](https://youtu.be/-au-iIaujvQ) · [◉ Summary B](https://youtu.be/caceJmOSU9g) |
-| 4 | **From Linear Models to Neural Networks** — neurons, activations, multilayer networks, XOR, and approximation | [▤ Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L2.pdf) · [▶ Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L2-presentation.pdf) · [★ Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S04-cheatsheet.pdf) · [⌨ Linear GD](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L02/01_linear_regression_gd.ipynb) · [⌨ XOR](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L02/02_mlp_xor.ipynb) · [◉ Summary A](https://youtu.be/DYmy_HVexUY) · [◉ Summary B](https://youtu.be/kRBao9ic-Kk) |
-
-## Gradients & optimization
-
-| No. | Lecture | Resources |
-|---:|---|---|
-| 5 | **Optimization I — Gradient Estimates & Step Sizes** — batches, stochastic gradients, and optimizer geometry | [▤ Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L5.pdf) · [▶ Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L5-presentation.pdf) · [★ Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S05-cheatsheet.pdf) · [◉ Recording](https://www.youtube.com/watch?v=CIdlYRSvnWQ) · [◉ Summary A](https://youtu.be/iByVRBf1nAA) · [◉ Summary B](https://youtu.be/8-f5bE3uBsE) |
-| 6 | **Backpropagation & Autograd from Scratch** — computation graphs, reverse mode, and a scalar engine | [▤ Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L3.pdf) · [▶ Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L3-presentation.pdf) · [★ Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S06-cheatsheet.pdf) · [⌨ Colab](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L03/04_scalar_autograd_pytorch_to_scratch.ipynb) · [◉ Recording](https://www.youtube.com/watch?v=I0Omc95jFiA) · [◉ Summary A](https://youtu.be/eB7ROt3NFBI) · [◉ Summary B](https://youtu.be/9qzBLGoWhg4) |
-| 7 | **Optimization II — Momentum, RMSProp & Adam** — moving averages and adaptive coordinate scaling | [▤ Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L5.pdf) · [▶ Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L5-presentation.pdf) · [★ Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S07-cheatsheet.pdf) · [◉ Momentum](https://www.youtube.com/watch?v=ZaQ-gIYSv_A) · [◉ RMSProp & Adam](https://www.youtube.com/watch?v=dobX7TW_DuE) · [◉ Summary A](https://youtu.be/lgYjBXYG6dA) · [◉ Summary B](https://youtu.be/DBrnsa8tKqo) |
-| 8 | **Vector, Matrix & Affine Autograd** — gradients, Jacobians, dense layers, and batched VJPs | [▤ Calculus](https://nipunbatra.github.io/dl-teaching/slides-pdf/L3A.pdf) · [▤ Autograd](https://nipunbatra.github.io/dl-teaching/slides-pdf/L3.pdf) · [★ Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S08-cheatsheet.pdf) · [⌨ Colab](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L03/00_backprop_autograd_complete.ipynb) · [◉ 3-min summary](https://youtu.be/HjxjfiUDoMM) |
-| 9 | **Valid Outputs by Design & Learning-Rate Schedules** — constrained parameters, warmup, decay, and cosine | [▤ Valid outputs](https://nipunbatra.github.io/dl-teaching/slides-pdf/L5B.pdf) · [▤ LR schedules](https://nipunbatra.github.io/dl-teaching/slides-pdf/L5C.pdf) · [★ Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S09-cheatsheet.pdf) · [◉ Summary A](https://youtu.be/uX6uBg6iZ1Y) · [◉ Summary B](https://youtu.be/sdRB7dRrJxQ) |
-
-## Generalization
-
-| No. | Lecture | Resources |
-|---:|---|---|
-| **10** | **Generalization & Regularization** — learning curves, weight decay, early stopping, dropout, augmentation, Mixup, and label smoothing | [▤ Slides](https://nipunbatra.github.io/dl-teaching/slides-pdf/L7.pdf) · [▶ Present](https://nipunbatra.github.io/dl-teaching/slides-pdf/L7-presentation.pdf) · [★ Cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/S10-cheatsheet.pdf) · [⌨ Learning curves](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L07/01_overfitting_and_early_stopping.ipynb) · [⌨ Mechanisms](https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L07/02_dropout_from_scratch.ipynb) · [◉ Summary A](https://youtu.be/5KFtpC9h83U) · [◉ Summary B](https://youtu.be/vchXFxKOYyQ) |
-
-## Attention and language
-
-Read the interactive lecture at your own pace, or choose **Present** for the
-classroom slides. Each cheatsheet fills two printable A4 pages.
-
-Lecture numbers below refer to class sessions. The characters-to-prediction material
-was taught in lecture 11; self-attention spanned lectures 12–14, with multi-head
-attention introduced in lecture 14. These sessions share resources from the attention series.
-
-| No. | Lecture | Resources |
-|---:|---|---|
-| 11 | **From characters to next-token prediction** — tokenization, learned embeddings, a hidden-layer MLP, training, and generation | [▤ Interactive lecture](https://nipunbatra.github.io/attention/part1.html) · [▶ Present](https://nipunbatra.github.io/attention/part1.html?present) · [★ A4 cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/P01-cheatsheet.pdf) · [◉ 3-min summary](https://youtu.be/1qza_VPINVE) |
-| 12 | **Self-attention, from first principles** | [▤ Interactive lecture](https://nipunbatra.github.io/attention/attention.html) · [▶ Present](https://nipunbatra.github.io/attention/attention.html?present) · [★ A4 cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/P02-cheatsheet.pdf) · [◉ Why attention?](https://youtu.be/61n3ejzg_8A) · [◉ Query, key, value](https://youtu.be/rRTMW4XjXQo) |
-| 13 | **Self-attention, continued** | [▤ Interactive lecture](https://nipunbatra.github.io/attention/attention.html) · [▶ Present](https://nipunbatra.github.io/attention/attention.html?present) · [★ A4 cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/P02-cheatsheet.pdf) · [◉ From attention to prediction](https://youtu.be/ff0Ru6TyaDM) · [◉ Position and order](https://youtu.be/mckdFlOaszM) |
-| 14 | **Self-attention and multi-head attention** | [▤ Self-attention](https://nipunbatra.github.io/attention/attention.html) · [▤ Multi-head attention](https://nipunbatra.github.io/attention/part3.html) · [▶ Present self-attention](https://nipunbatra.github.io/attention/attention.html?present) · [▶ Present multi-head attention](https://nipunbatra.github.io/attention/part3.html?present) |
-
-## Vision
-
-| No. | Lecture | Resources |
-|---:|---|---|
-| 15 | **Vision Transformer for image classification** — upcoming | [▤ Interactive lecture](https://nipunbatra.github.io/attention/vision1.html) · [▶ Present](https://nipunbatra.github.io/attention/vision1.html?present) |
+```{=html}
+<nav class="lecture-jump" aria-label="Course sections">
+  <a href="#foundations"><span>Foundations</span><span class="jump-range">1–4</span></a>
+  <a href="#gradients-optimization"><span>Optimization</span><span class="jump-range">5–9</span></a>
+  <a href="#generalization"><span>Generalization</span><span class="jump-range">10</span></a>
+  <a href="#attention-and-language"><span>Attention</span><span class="jump-range">11–14</span></a>
+  <a href="#vision"><span>Vision</span><span class="jump-range">15</span></a>
+</nav>
+<div class="lecture-library">
+<section id="foundations" class="lecture-section" aria-labelledby="foundations-title">
+  <header class="lecture-section-head"><h2 id="foundations-title">Foundations</h2><span>Lectures 1–4</span></header>
+  <article id="lecture-1" class="lecture-row" aria-labelledby="lecture-1-title">
+    <div class="lecture-number"><span class="visually-hidden">Lecture </span>01</div>
+    <div class="lecture-topic">
+      <h3 id="lecture-1-title">Where Deep Learning Losses Come From I</h3>
+      <p>Distributions, likelihood, and loss.</p>
+    </div>
+    <div class="lecture-resources" aria-label="Lecture 1 resources">
+      <div class="resource-actions"><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf" aria-label="Slides — lecture 1">Slides</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L1-presentation.pdf" aria-label="Present — lecture 1">Present</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/S01-cheatsheet.pdf" aria-label="Cheatsheet — lecture 1">Cheatsheet</a></div>
+      <details class="resource-videos">
+        <summary>1 short video</summary>
+        <div class="video-content">
+          <span class="resource-label">3-minute summaries</span>
+          <ul class="video-list">
+            <li><a href="https://youtu.be/8-HcIIqmmsw" aria-label="Where do loss functions come from? — lecture 1">Where do loss functions come from?</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </article>
+  <article id="lecture-2" class="lecture-row" aria-labelledby="lecture-2-title">
+    <div class="lecture-number"><span class="visually-hidden">Lecture </span>02</div>
+    <div class="lecture-topic">
+      <h3 id="lecture-2-title">Where Deep Learning Losses Come From II</h3>
+      <p>MLE, regression, and classification.</p>
+    </div>
+    <div class="lecture-resources" aria-label="Lecture 2 resources">
+      <div class="resource-actions"><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf" aria-label="Slides — lecture 2">Slides</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L1-presentation.pdf" aria-label="Present — lecture 2">Present</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/S02-cheatsheet.pdf" aria-label="Cheatsheet — lecture 2">Cheatsheet</a></div>
+      <details class="resource-videos">
+        <summary>1 short video</summary>
+        <div class="video-content">
+          <span class="resource-label">3-minute summaries</span>
+          <ul class="video-list">
+            <li><a href="https://youtu.be/HO9Tj5VUGfs" aria-label="Where MSE and cross-entropy come from — lecture 2">Where MSE and cross-entropy come from</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </article>
+  <article id="lecture-3" class="lecture-row" aria-labelledby="lecture-3-title">
+    <div class="lecture-number"><span class="visually-hidden">Lecture </span>03</div>
+    <div class="lecture-topic">
+      <h3 id="lecture-3-title">Likelihood to Loss in Practice</h3>
+      <p>MAP, regularization, and robust observation models.</p>
+    </div>
+    <div class="lecture-resources" aria-label="Lecture 3 resources">
+      <div class="resource-actions"><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf" aria-label="Slides — lecture 3">Slides</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/S03-cheatsheet.pdf" aria-label="Cheatsheet — lecture 3">Cheatsheet</a></div>
+      <div class="resource-set">
+        <span class="resource-label">Notebooks</span>
+        <ul class="resource-list">
+          <li><a href="https://nipunbatra.github.io/dl-teaching/notebooks/L01/00_likelihood_iid_worked_examples.html" aria-label="Likelihood notebook — lecture 3">Likelihood notebook</a></li>
+          <li><a href="https://nipunbatra.github.io/dl-teaching/notebooks/L01/03_robust_linear_regression.html" aria-label="Robust regression — lecture 3">Robust regression</a></li>
+        </ul>
+      </div>
+      <details class="resource-videos">
+        <summary>2 short videos</summary>
+        <div class="video-content">
+          <span class="resource-label">3-minute summaries</span>
+          <ul class="video-list">
+            <li><a href="https://youtu.be/-au-iIaujvQ" aria-label="Outliers: how the noise model picks the loss — lecture 3">Outliers: how the noise model picks the loss</a></li>
+            <li><a href="https://youtu.be/caceJmOSU9g" aria-label="Priors: where regularization comes from — lecture 3">Priors: where regularization comes from</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </article>
+  <article id="lecture-4" class="lecture-row" aria-labelledby="lecture-4-title">
+    <div class="lecture-number"><span class="visually-hidden">Lecture </span>04</div>
+    <div class="lecture-topic">
+      <h3 id="lecture-4-title">From Linear Models to Neural Networks</h3>
+      <p>Neurons, activations, multilayer networks, XOR, and approximation.</p>
+    </div>
+    <div class="lecture-resources" aria-label="Lecture 4 resources">
+      <div class="resource-actions"><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L2.pdf" aria-label="Slides — lecture 4">Slides</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L2-presentation.pdf" aria-label="Present — lecture 4">Present</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/S04-cheatsheet.pdf" aria-label="Cheatsheet — lecture 4">Cheatsheet</a></div>
+      <div class="resource-set">
+        <span class="resource-label">Notebooks</span>
+        <ul class="resource-list">
+          <li><a href="https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L02/01_linear_regression_gd.ipynb" aria-label="Linear gradient descent — lecture 4">Linear gradient descent</a></li>
+          <li><a href="https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L02/02_mlp_xor.ipynb" aria-label="XOR — lecture 4">XOR</a></li>
+        </ul>
+      </div>
+      <details class="resource-videos">
+        <summary>2 short videos</summary>
+        <div class="video-content">
+          <span class="resource-label">3-minute summaries</span>
+          <ul class="video-list">
+            <li><a href="https://youtu.be/DYmy_HVexUY" aria-label="From weighted sums to neurons: solving XOR — lecture 4">From weighted sums to neurons: solving XOR</a></li>
+            <li><a href="https://youtu.be/kRBao9ic-Kk" aria-label="ReLU hinges and universal approximation — lecture 4">ReLU hinges and universal approximation</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </article>
+</section>
+<section id="gradients-optimization" class="lecture-section" aria-labelledby="gradients-optimization-title">
+  <header class="lecture-section-head"><h2 id="gradients-optimization-title">Gradients and optimization</h2><span>Lectures 5–9</span></header>
+  <article id="lecture-5" class="lecture-row" aria-labelledby="lecture-5-title">
+    <div class="lecture-number"><span class="visually-hidden">Lecture </span>05</div>
+    <div class="lecture-topic">
+      <h3 id="lecture-5-title">Optimization I — Gradient Estimates &amp; Step Sizes</h3>
+      <p>Batches, stochastic gradients, and optimizer geometry.</p>
+    </div>
+    <div class="lecture-resources" aria-label="Lecture 5 resources">
+      <div class="resource-actions"><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L5.pdf" aria-label="Slides — lecture 5">Slides</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L5-presentation.pdf" aria-label="Present — lecture 5">Present</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/S05-cheatsheet.pdf" aria-label="Cheatsheet — lecture 5">Cheatsheet</a></div>
+      <details class="resource-videos">
+        <summary>1 recording · 2 short videos</summary>
+        <div class="video-content">
+          <span class="resource-label">Recordings</span>
+          <ul class="video-list">
+            <li><a href="https://www.youtube.com/watch?v=CIdlYRSvnWQ" aria-label="Full lecture — lecture 5">Full lecture</a></li>
+          </ul>
+          <span class="resource-label">3-minute summaries</span>
+          <ul class="video-list">
+            <li><a href="https://youtu.be/iByVRBf1nAA" aria-label="SGD vs minibatch: how much data per step? — lecture 5">SGD vs minibatch: how much data per step?</a></li>
+            <li><a href="https://youtu.be/8-f5bE3uBsE" aria-label="Why gradient descent zigzags: step sizes — lecture 5">Why gradient descent zigzags: step sizes</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </article>
+  <article id="lecture-6" class="lecture-row" aria-labelledby="lecture-6-title">
+    <div class="lecture-number"><span class="visually-hidden">Lecture </span>06</div>
+    <div class="lecture-topic">
+      <h3 id="lecture-6-title">Backpropagation &amp; Autograd from Scratch</h3>
+      <p>Computation graphs, reverse mode, and a scalar engine.</p>
+    </div>
+    <div class="lecture-resources" aria-label="Lecture 6 resources">
+      <div class="resource-actions"><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L3.pdf" aria-label="Slides — lecture 6">Slides</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L3-presentation.pdf" aria-label="Present — lecture 6">Present</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/S06-cheatsheet.pdf" aria-label="Cheatsheet — lecture 6">Cheatsheet</a></div>
+      <div class="resource-set">
+        <span class="resource-label">Notebooks</span>
+        <ul class="resource-list">
+          <li><a href="https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L03/04_scalar_autograd_pytorch_to_scratch.ipynb" aria-label="Colab notebook — lecture 6">Colab notebook</a></li>
+        </ul>
+      </div>
+      <details class="resource-videos">
+        <summary>1 recording · 2 short videos</summary>
+        <div class="video-content">
+          <span class="resource-label">Recordings</span>
+          <ul class="video-list">
+            <li><a href="https://www.youtube.com/watch?v=I0Omc95jFiA" aria-label="Full lecture — lecture 6">Full lecture</a></li>
+          </ul>
+          <span class="resource-label">3-minute summaries</span>
+          <ul class="video-list">
+            <li><a href="https://youtu.be/eB7ROt3NFBI" aria-label="Backprop by hand: one local rule — lecture 6">Backprop by hand: one local rule</a></li>
+            <li><a href="https://youtu.be/9qzBLGoWhg4" aria-label="Build a tiny autograd engine from scratch — lecture 6">Build a tiny autograd engine from scratch</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </article>
+  <article id="lecture-7" class="lecture-row" aria-labelledby="lecture-7-title">
+    <div class="lecture-number"><span class="visually-hidden">Lecture </span>07</div>
+    <div class="lecture-topic">
+      <h3 id="lecture-7-title">Optimization II — Momentum, RMSProp &amp; Adam</h3>
+      <p>Moving averages and adaptive coordinate scaling.</p>
+    </div>
+    <div class="lecture-resources" aria-label="Lecture 7 resources">
+      <div class="resource-actions"><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L5.pdf" aria-label="Slides — lecture 7">Slides</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L5-presentation.pdf" aria-label="Present — lecture 7">Present</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/S07-cheatsheet.pdf" aria-label="Cheatsheet — lecture 7">Cheatsheet</a></div>
+      <details class="resource-videos">
+        <summary>2 recordings · 2 short videos</summary>
+        <div class="video-content">
+          <span class="resource-label">Recordings</span>
+          <ul class="video-list">
+            <li><a href="https://www.youtube.com/watch?v=ZaQ-gIYSv_A" aria-label="Momentum — lecture 7">Momentum</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dobX7TW_DuE" aria-label="RMSProp &amp; Adam — lecture 7">RMSProp &amp; Adam</a></li>
+          </ul>
+          <span class="resource-label">3-minute summaries</span>
+          <ul class="video-list">
+            <li><a href="https://youtu.be/lgYjBXYG6dA" aria-label="Momentum: averaging away the zigzag — lecture 7">Momentum: averaging away the zigzag</a></li>
+            <li><a href="https://youtu.be/DBrnsa8tKqo" aria-label="RMSProp and Adam: a step size per coordinate — lecture 7">RMSProp and Adam: a step size per coordinate</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </article>
+  <article id="lecture-8" class="lecture-row" aria-labelledby="lecture-8-title">
+    <div class="lecture-number"><span class="visually-hidden">Lecture </span>08</div>
+    <div class="lecture-topic">
+      <h3 id="lecture-8-title">Vector, Matrix &amp; Affine Autograd</h3>
+      <p>Gradients, Jacobians, dense layers, and batched VJPs.</p>
+    </div>
+    <div class="lecture-resources" aria-label="Lecture 8 resources">
+      <div class="resource-actions"><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L3A.pdf" aria-label="Calculus slides — lecture 8">Calculus slides</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L3.pdf" aria-label="Autograd slides — lecture 8">Autograd slides</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/S08-cheatsheet.pdf" aria-label="Cheatsheet — lecture 8">Cheatsheet</a></div>
+      <div class="resource-set">
+        <span class="resource-label">Notebooks</span>
+        <ul class="resource-list">
+          <li><a href="https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L03/00_backprop_autograd_complete.ipynb" aria-label="Colab notebook — lecture 8">Colab notebook</a></li>
+        </ul>
+      </div>
+      <details class="resource-videos">
+        <summary>1 short video</summary>
+        <div class="video-content">
+          <span class="resource-label">3-minute summaries</span>
+          <ul class="video-list">
+            <li><a href="https://youtu.be/HjxjfiUDoMM" aria-label="Backprop through layers: Jacobians to batches — lecture 8">Backprop through layers: Jacobians to batches</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </article>
+  <article id="lecture-9" class="lecture-row" aria-labelledby="lecture-9-title">
+    <div class="lecture-number"><span class="visually-hidden">Lecture </span>09</div>
+    <div class="lecture-topic">
+      <h3 id="lecture-9-title">Valid Outputs by Design &amp; Learning-Rate Schedules</h3>
+      <p>Constrained parameters, warmup, decay, and cosine.</p>
+    </div>
+    <div class="lecture-resources" aria-label="Lecture 9 resources">
+      <div class="resource-actions"><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L5B.pdf" aria-label="Valid outputs slides — lecture 9">Valid outputs slides</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L5C.pdf" aria-label="LR schedule slides — lecture 9">LR schedule slides</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/S09-cheatsheet.pdf" aria-label="Cheatsheet — lecture 9">Cheatsheet</a></div>
+      <details class="resource-videos">
+        <summary>2 short videos</summary>
+        <div class="video-content">
+          <span class="resource-label">3-minute summaries</span>
+          <ul class="video-list">
+            <li><a href="https://youtu.be/uX6uBg6iZ1Y" aria-label="Valid outputs by design: softplus to softmax — lecture 9">Valid outputs by design: softplus to softmax</a></li>
+            <li><a href="https://youtu.be/sdRB7dRrJxQ" aria-label="Learning-rate schedules: warmup, decay, cosine — lecture 9">Learning-rate schedules: warmup, decay, cosine</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </article>
+</section>
+<section id="generalization" class="lecture-section" aria-labelledby="generalization-title">
+  <header class="lecture-section-head"><h2 id="generalization-title">Generalization</h2><span>Lecture 10</span></header>
+  <article id="lecture-10" class="lecture-row" aria-labelledby="lecture-10-title">
+    <div class="lecture-number"><span class="visually-hidden">Lecture </span>10</div>
+    <div class="lecture-topic">
+      <h3 id="lecture-10-title">Generalization &amp; Regularization</h3>
+      <p>Learning curves, weight decay, early stopping, dropout, augmentation, Mixup, and label smoothing.</p>
+    </div>
+    <div class="lecture-resources" aria-label="Lecture 10 resources">
+      <div class="resource-actions"><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L7.pdf" aria-label="Slides — lecture 10">Slides</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/L7-presentation.pdf" aria-label="Present — lecture 10">Present</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/S10-cheatsheet.pdf" aria-label="Cheatsheet — lecture 10">Cheatsheet</a></div>
+      <div class="resource-set">
+        <span class="resource-label">Notebooks</span>
+        <ul class="resource-list">
+          <li><a href="https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L07/01_overfitting_and_early_stopping.ipynb" aria-label="Learning curves — lecture 10">Learning curves</a></li>
+          <li><a href="https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L07/02_dropout_from_scratch.ipynb" aria-label="Dropout and regularization — lecture 10">Dropout and regularization</a></li>
+        </ul>
+      </div>
+      <details class="resource-videos">
+        <summary>2 short videos</summary>
+        <div class="video-content">
+          <span class="resource-label">3-minute summaries</span>
+          <ul class="video-list">
+            <li><a href="https://youtu.be/5KFtpC9h83U" aria-label="Overfitting, weight decay and early stopping — lecture 10">Overfitting, weight decay and early stopping</a></li>
+            <li><a href="https://youtu.be/vchXFxKOYyQ" aria-label="Dropout, augmentation, Mixup and label smoothing — lecture 10">Dropout, augmentation, Mixup and label smoothing</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </article>
+</section>
+<section id="attention-and-language" class="lecture-section" aria-labelledby="attention-and-language-title">
+  <header class="lecture-section-head"><h2 id="attention-and-language-title">Attention and language</h2><span>Lectures 11–14</span></header>
+  <article id="lecture-11" class="lecture-row" aria-labelledby="lecture-11-title">
+    <div class="lecture-number"><span class="visually-hidden">Lecture </span>11</div>
+    <div class="lecture-topic">
+      <h3 id="lecture-11-title">From characters to next-token prediction</h3>
+      <p>Tokenization, learned embeddings, a hidden-layer MLP, training, and generation.</p>
+    </div>
+    <div class="lecture-resources" aria-label="Lecture 11 resources">
+      <div class="resource-actions"><a href="https://nipunbatra.github.io/attention/part1.html" aria-label="Read lecture — lecture 11">Read lecture</a><a href="https://nipunbatra.github.io/attention/part1.html?present" aria-label="Present — lecture 11">Present</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/P01-cheatsheet.pdf" aria-label="Cheatsheet — lecture 11">Cheatsheet</a></div>
+      <details class="resource-videos">
+        <summary>1 short video</summary>
+        <div class="video-content">
+          <span class="resource-label">3-minute summaries</span>
+          <ul class="video-list">
+            <li><a href="https://youtu.be/1qza_VPINVE" aria-label="Next-token prediction from scratch — lecture 11">Next-token prediction from scratch</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </article>
+  <article id="lecture-12" class="lecture-row" aria-labelledby="lecture-12-title">
+    <div class="lecture-number"><span class="visually-hidden">Lecture </span>12</div>
+    <div class="lecture-topic">
+      <h3 id="lecture-12-title">Self-attention, from first principles</h3>
+    </div>
+    <div class="lecture-resources" aria-label="Lecture 12 resources">
+      <div class="resource-actions"><a href="https://nipunbatra.github.io/attention/attention.html" aria-label="Read lecture — lecture 12">Read lecture</a><a href="https://nipunbatra.github.io/attention/attention.html?present" aria-label="Present — lecture 12">Present</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/P02-cheatsheet.pdf" aria-label="Cheatsheet — lecture 12">Cheatsheet</a></div>
+      <details class="resource-videos">
+        <summary>2 short videos</summary>
+        <div class="video-content">
+          <span class="resource-label">3-minute summaries</span>
+          <ul class="video-list">
+            <li><a href="https://youtu.be/61n3ejzg_8A" aria-label="Why attention? — lecture 12">Why attention?</a></li>
+            <li><a href="https://youtu.be/rRTMW4XjXQo" aria-label="Query, key, value — lecture 12">Query, key, value</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </article>
+  <article id="lecture-13" class="lecture-row" aria-labelledby="lecture-13-title">
+    <div class="lecture-number"><span class="visually-hidden">Lecture </span>13</div>
+    <div class="lecture-topic">
+      <h3 id="lecture-13-title">Self-attention, continued</h3>
+    </div>
+    <div class="lecture-resources" aria-label="Lecture 13 resources">
+      <div class="resource-actions"><a href="https://nipunbatra.github.io/attention/attention.html" aria-label="Read lecture — lecture 13">Read lecture</a><a href="https://nipunbatra.github.io/attention/attention.html?present" aria-label="Present — lecture 13">Present</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/P02-cheatsheet.pdf" aria-label="Cheatsheet — lecture 13">Cheatsheet</a></div>
+      <details class="resource-videos">
+        <summary>2 short videos</summary>
+        <div class="video-content">
+          <span class="resource-label">3-minute summaries</span>
+          <ul class="video-list">
+            <li><a href="https://youtu.be/ff0Ru6TyaDM" aria-label="From attention to prediction — lecture 13">From attention to prediction</a></li>
+            <li><a href="https://youtu.be/mckdFlOaszM" aria-label="Position and order — lecture 13">Position and order</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </article>
+  <article id="lecture-14" class="lecture-row" aria-labelledby="lecture-14-title">
+    <div class="lecture-number"><span class="visually-hidden">Lecture </span>14</div>
+    <div class="lecture-topic">
+      <h3 id="lecture-14-title">Self-attention and multi-head attention</h3>
+    </div>
+    <div class="lecture-resources" aria-label="Lecture 14 resources">
+      <div class="resource-set">
+        <span class="resource-label">Self-attention</span>
+        <div class="resource-actions"><a href="https://nipunbatra.github.io/attention/attention.html" aria-label="Read self-attention — lecture 14">Read lecture</a><a href="https://nipunbatra.github.io/attention/attention.html?present" aria-label="Present self-attention — lecture 14">Present</a></div>
+      </div>
+      <div class="resource-set">
+        <span class="resource-label">Multi-head attention</span>
+        <div class="resource-actions"><a href="https://nipunbatra.github.io/attention/part3.html" aria-label="Read multi-head attention — lecture 14">Read lecture</a><a href="https://nipunbatra.github.io/attention/part3.html?present" aria-label="Present multi-head attention — lecture 14">Present</a></div>
+      </div>
+    </div>
+  </article>
+</section>
+<section id="vision" class="lecture-section" aria-labelledby="vision-title">
+  <header class="lecture-section-head"><h2 id="vision-title">Vision</h2><span>Lecture 15</span></header>
+  <article id="lecture-15" class="lecture-row" aria-labelledby="lecture-15-title">
+    <div class="lecture-number"><span class="visually-hidden">Lecture </span>15</div>
+    <div class="lecture-topic">
+      <h3 id="lecture-15-title">Vision Transformer for image classification</h3>
+      <span class="lecture-status">Upcoming</span>
+    </div>
+    <div class="lecture-resources" aria-label="Lecture 15 resources">
+      <div class="resource-actions"><a href="https://nipunbatra.github.io/attention/vision1.html" aria-label="Read lecture — lecture 15">Read lecture</a><a href="https://nipunbatra.github.io/attention/vision1.html?present" aria-label="Present — lecture 15">Present</a></div>
+    </div>
+  </article>
+</section>
+</div>
+```
