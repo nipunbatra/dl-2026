@@ -38,7 +38,19 @@ each **Cheatsheet** is a two-page review guide.
 Read the interactive lecture at your own pace, or choose **Present** for the
 classroom slides. Each cheatsheet fills two printable A4 pages.
 
-| Part | Lecture | Resources |
+Lecture numbers below refer to class sessions. The characters-to-prediction material
+was taught in lecture 11; self-attention spanned lectures 12–14, with multi-head
+attention introduced in lecture 14. These sessions share resources from the attention series.
+
+| No. | Lecture | Resources |
 |---:|---|---|
-| 1 | **From characters to next-token prediction** — tokenization, learned embeddings, a hidden-layer MLP, training, and generation | [▤ Interactive lecture](https://nipunbatra.github.io/attention/part1.html) · [▶ Present](https://nipunbatra.github.io/attention/part1.html?present) · [★ A4 cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/P01-cheatsheet.pdf) · [◉ 3-min summary](https://youtu.be/1qza_VPINVE) |
-| 2 | **Self-attention, from first principles** — queries, keys, values, scaling, causal masking, and residual updates | [▤ Interactive lecture](https://nipunbatra.github.io/attention/attention.html) · [▶ Present](https://nipunbatra.github.io/attention/attention.html?present) · [★ A4 cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/P02-cheatsheet.pdf) · [◉ Summary A](https://youtu.be/61n3ejzg_8A) · [◉ Summary B](https://youtu.be/rRTMW4XjXQo) · [◉ Summary C](https://youtu.be/ff0Ru6TyaDM) · [◉ Summary D](https://youtu.be/mckdFlOaszM) |
+| 11 | **From characters to next-token prediction** — tokenization, learned embeddings, a hidden-layer MLP, training, and generation | [▤ Interactive lecture](https://nipunbatra.github.io/attention/part1.html) · [▶ Present](https://nipunbatra.github.io/attention/part1.html?present) · [★ A4 cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/P01-cheatsheet.pdf) · [◉ 3-min summary](https://youtu.be/1qza_VPINVE) |
+| 12 | **Self-attention, from first principles** | [▤ Interactive lecture](https://nipunbatra.github.io/attention/attention.html) · [▶ Present](https://nipunbatra.github.io/attention/attention.html?present) · [★ A4 cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/P02-cheatsheet.pdf) · [◉ Why attention?](https://youtu.be/61n3ejzg_8A) · [◉ Query, key, value](https://youtu.be/rRTMW4XjXQo) |
+| 13 | **Self-attention, continued** | [▤ Interactive lecture](https://nipunbatra.github.io/attention/attention.html) · [▶ Present](https://nipunbatra.github.io/attention/attention.html?present) · [★ A4 cheatsheet](https://nipunbatra.github.io/dl-teaching/slides-pdf/P02-cheatsheet.pdf) · [◉ From attention to prediction](https://youtu.be/ff0Ru6TyaDM) · [◉ Position and order](https://youtu.be/mckdFlOaszM) |
+| 14 | **Self-attention and multi-head attention** | [▤ Self-attention](https://nipunbatra.github.io/attention/attention.html) · [▤ Multi-head attention](https://nipunbatra.github.io/attention/part3.html) · [▶ Present self-attention](https://nipunbatra.github.io/attention/attention.html?present) · [▶ Present multi-head attention](https://nipunbatra.github.io/attention/part3.html?present) |
+
+## Vision
+
+| No. | Lecture | Resources |
+|---:|---|---|
+| 15 | **Vision Transformer for image classification** — upcoming | [▤ Interactive lecture](https://nipunbatra.github.io/attention/vision1.html) · [▶ Present](https://nipunbatra.github.io/attention/vision1.html?present) |
