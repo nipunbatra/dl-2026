@@ -14,6 +14,7 @@ ES 667 develops deep-learning models from their statistical and computational fo
 
 - [Lecture library](schedule.qmd)
 - [Lecture slides and notebooks](https://nipunbatra.github.io/dl-teaching/)
+- [Assignment 2 · Names and attention](Assignments/assignment2.qmd)
 - [Grading](grading.qmd) and [deadlines](deadlines.qmd)
 - [Slack workspace](https://join.slack.com/t/dl26workspace/shared_invite/zt-43b3v79vb-bVZl1_sJVCrBkVMDsq5TYA)
 

@@ -11,8 +11,8 @@ Three assignments and three quizzes (best two count). Each assignment deadline i
 | 19 Aug 26 | Assignment 1 released |
 | 27 Aug 26 | Assignment 1 due |
 | 10 Sep 26 | **Quiz 1** |
-| 24 Sep 26 | Assignment 2 released |   
-| 01 Oct 26 | Assignment 2 due |
+| 24 Sep 26 | [Assignment 2 released](Assignments/assignment2.qmd) |
+| 01 Oct 26 | [Assignment 2 due](Assignments/assignment2.qmd) |
 | 15 Oct 26 | **Quiz 2** |
 | 16 Oct 26 | Assignment 3 released |
 | 02 Nov 26 | Assignment 3 due |

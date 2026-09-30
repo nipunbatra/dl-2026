@@ -1,0 +1,209 @@
+---
+title: "Assignment 2 · Names and attention"
+---
+
+**5 questions · 4 marks each · 20 marks in total**
+
+In this assignment, you will train small models and use a few plots to understand what they learn. Use the lecture code and the setup below. You do not need to tune hyperparameters, build a website, or make animations.
+
+Submit one notebook, **`a2_<rollno>.ipynb`**, with your code, outputs, and short explanations. The deadline is on the [Deadlines](../deadlines.qmd) page. The score out of 20 will be scaled to the 13 course marks allocated to an assignment.
+
+## The setup, at a glance
+
+| Data | Training | Validation | Test |
+|---|---:|---:|---:|
+| FashionMNIST, for Q1 and Q5 | 6,000 images | 1,000 images | Official 10,000-image test set |
+| Names, for Q2–Q4 | 5,182 names | 647 names | 649 names |
+
+Use **seed 42** for splits and training, **43** for name sampling, and **44** for shuffling experiments. Reuse the same splits throughout. Training updates weights; validation selects the checkpoint; test reports the final result.
+
+For every run, train for the stated number of epochs and keep the checkpoint with the **lowest validation cross-entropy** (earlier epoch in a tie). Evaluate the selected checkpoint on test. No minimum accuracy is required: explain the results you actually get.
+
+The exact data preparation is provided in **“Shared setup”** below. You may copy that code into your notebook.
+
+## Q1 · Softer targets
+
+[Lecture: label smoothing](https://nipunbatra.github.io/dl-teaching/slides-pdf/L7.pdf), PDF pages 94–97.
+
+Train an MLP on FashionMNIST: **`784 → 128 → 10`**, with ReLU between the linear layers. Use Adam, learning rate `1e-3`, batch size 128, and **10 epochs**.
+
+Compare two training losses: `nn.CrossEntropyLoss(label_smoothing=0)` and `nn.CrossEntropyLoss(label_smoothing=0.1)`. The second uses target probability **0.91** for the true class and **0.01** for every other class. Validation and test always use ordinary cross-entropy with hard labels.
+
+Include:
+
+- A table with the selected epoch, test accuracy, and mean test confidence for each model. Confidence is the largest softmax probability.
+- One plot comparing the two test-confidence histograms, using the same 20 bins over `[0, 1]`.
+- **3–4 sentences:** what changed in accuracy and confidence? Why do softer targets reduce the pressure toward extreme confidence?
+
+## Q2 · Predict the next letter
+
+[Lecture: characters to next-token prediction](https://nipunbatra.github.io/attention/part1.html), sections 3–11.
+
+Use a context of three characters. For `ana`, the examples are **`--- → a`, `--a → n`, `-an → a`, `ana → -`**. Reset the context at the start of every name.
+
+Model: `Embedding(27, 2)`, concatenate the three embeddings into six numbers, then **`6 → 32 → 27`**, with ReLU. Use Adam, learning rate `1e-3`, batch size 256, ordinary cross-entropy, and **20 epochs**.
+
+Include:
+
+- Training and validation loss curves; report the selected epoch and test loss in **nats per predicted token**, including the end token.
+- The 27 embedding points, labelled with their characters, before training and at the selected checkpoint.
+- **One greedy name** and **five sampled names at each temperature 0.5, 1, and 2**, using the same trained model. Start from `---`; greedy chooses the largest logit, sampling uses `softmax(logits / temperature)` and `torch.multinomial`. Reset seed 43 before each temperature's group. Stop at `-` or after 20 letters; label empty or length-limited outputs. Repeated samples are fine.
+- **3–4 sentences:** what changed in the embeddings, why does greedy repeat the same name, and how did temperature affect your samples?
+
+## Q3 · One attention head and the mask
+
+[Lecture: self-attention](https://nipunbatra.github.io/attention/attention.html), sections 11–14, 16, and 19.
+
+Use the eight-character examples provided below. Model: token embedding **`27 × 16`**, learned position embedding **`8 × 16`**, and one attention head. Its four bias-free projections `W_Q`, `W_K`, `W_V`, and `W_O` are each `16 × 16`.
+
+Implement the head with matrix products:
+
+```text
+E = token embeddings + position embeddings
+Q = E W_Q; K = E W_K; V = E W_V
+A = softmax(Q Kᵀ / sqrt(16), over source positions)
+R = E + (A V) W_O
+logits = Linear(32, 27)(ReLU(Linear(16, 32)(R)))
+```
+
+For the causal version, set scores for `j > i` to `-inf` **before** softmax. A position may attend to itself. Transpose K's last two dimensions for batched inputs. Output logits have shape `batch × 8 × 27`. Use one layer, with no LayerNorm or dropout.
+
+Train **two models**, mask on and mask off. Use Adam, learning rate `3e-3`, batch size 256, and **10 epochs**. Training loss includes all valid targets. Select checkpoints and report validation/test loss using **only the last position**, which has no future input to inspect.
+
+Include:
+
+- A check that each attention row sums to 1 and masked future weights are zero.
+- A table with the selected epoch, training loss over valid positions, and last-position validation and test losses for each model. Recompute training loss at the selected checkpoint.
+- Two `8 × 8` attention heatmaps, using the first validation context with eight non-padding letters. Print those letters; use the same colour scale for both models.
+- **3–4 sentences:** what can the unmasked model see that it should not see? Why is the last position different? What does the causal mask prevent?
+
+Keep the masked model for Q4.
+
+## Q4 · What do positions add?
+
+[Lecture: position and order](https://nipunbatra.github.io/attention/attention.html#s17), section 17.
+
+Reuse Q3's masked model with positions. Train **one new masked model** without adding position embeddings, using the same initial shared weights, data, and training settings as Q3. You do not need sinusoidal positions or another run of the position model.
+
+For the shuffle experiment, keep the last character fixed and shuffle the first seven input characters of every validation context. With `rng = np.random.default_rng(44)`, call `rng.permutation(7)` once per context, in dataset order. Reuse these shuffled contexts for both models; leave the last target unchanged. Position vectors stay attached to their destination slots.
+
+Include:
+
+- One sentence predicting the shuffle effect before running it.
+- A table of last-position validation loss on original and shuffled contexts for both models, plus original test loss and selected epoch. Do not score earlier positions on shuffled contexts.
+- **3–4 sentences:** why does the no-position model's last prediction stay the same, apart from numerical rounding? How do position embeddings give it information about order? Keep your explanation specific to this single attention layer.
+
+## Q5 · A small Vision Transformer
+
+[Lecture: Vision I](https://nipunbatra.github.io/attention/vision1.html), sections 2–6 (model), 9 (attention maps), and 11 (patch rearrangement).
+
+Use the same FashionMNIST splits as Q1. Divide an image into **49 non-overlapping `4 × 4` patches**, ordered left to right, then top to bottom. Flatten each patch to 16 numbers; use one shared `Linear(16, 32)` to embed them. Prepend a learned CLS token and add a learned **`50 × 32`** position table.
+
+Use **one block**, with two attention heads of width 16:
+
+```text
+U = X + Attention(LayerNorm1(X))
+Z = U + MLP(LayerNorm2(U))
+```
+
+The MLP is `32 → 64 → 32` with GELU. Apply a final LayerNorm and `Linear(32, 10)` to the CLS row. There is **no causal mask**. You may use `nn.MultiheadAttention(32, 2, dropout=0, batch_first=True)`; you need not implement attention again.
+
+Train two variants, with and without adding positions. Use AdamW, learning rate `1e-3`, weight decay `0.01` on all parameters, batch size 128, and **10 epochs**.
+
+Include:
+
+- A table with selected epoch and test accuracy on original and patch-shuffled images for both models. For shuffling, start a fresh `rng = np.random.default_rng(44)` and call `rng.permutation(49)` once per test image in official order. Move whole patches, keep CLS fixed, and reuse the same permutations for both models. Position vectors stay at destination slots; clothing labels stay unchanged. Do not train on shuffled images.
+- For the **first two original test images**, show the images and the position model's CLS attention maps. Average over heads, remove the CLS-to-CLS entry, and reshape the remaining weights to `7 × 7`; use a shared colour scale. With PyTorch attention, request `need_weights=True, average_attn_weights=False`.
+- **3–4 sentences:** why does patch shuffling preserve the no-position model's prediction, apart from rounding? Why can positions change this? What does an attention map show, and why is it not proof that a patch caused the prediction?
+
+## Shared setup
+
+<details>
+<summary><strong>Open the exact data preparation and training conventions</strong></summary>
+
+### Seeds and training
+
+```python
+import random
+import numpy as np
+import torch
+
+def set_seed(seed):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.benchmark = False
+    torch.backends.cudnn.deterministic = True
+```
+
+Call `set_seed(42)` before each model is initialized. Compared models should start from identical shared weights: initialize once and copy those parameters to the other variant. For position comparisons, you may construct the same position table in both variants and switch off its addition in the no-position variant.
+
+For each training run, create a fresh loader with `shuffle=True`, `num_workers=0`, `drop_last=False`, and `generator=torch.Generator().manual_seed(42)`. Do not reset this generator each epoch. Validation and test use `shuffle=False`. Use `model.train()` for updates, and `model.eval()` with `torch.no_grad()` for evaluation and generation.
+
+Use float32 and PyTorch's default initialization for layers. Initialize learned position tables and CLS tokens with mean 0 and standard deviation 0.02. Linear layers have biases, except the four Q3 attention projections. Use default optimizer settings beyond those stated in the question. Add no augmentation, dropout, schedules, clipping, or pretrained weights.
+
+Evaluate validation loss after every epoch. Save a copy of the best weights, for example with `copy.deepcopy(model.state_dict())`, and restore it before reporting results. Use hard-label cross-entropy for validation, including Q1. Feed raw logits to cross-entropy. Average loss over included predictions, rather than averaging minibatch means equally. CPU or GPU is fine; state your device and PyTorch version. Small numerical differences are acceptable.
+
+### FashionMNIST
+
+Load `torchvision.datasets.FashionMNIST` with `transforms.ToTensor()`, no other transforms, and the original class IDs. From the official 60,000-image training set:
+
+```python
+g = torch.Generator().manual_seed(42)
+order = torch.randperm(60000, generator=g).tolist()
+train_indices = order[:6000]
+val_indices = order[6000:7000]
+```
+
+Use `torch.utils.data.Subset` with these indices. Leave the other training images unused. The test set is **all 10,000 official `train=False` images**, in their original order. Reuse these sets in Q1 and Q5.
+
+### Names
+
+Download [names.csv](https://raw.githubusercontent.com/nipunbatra/attention/0fb9f0580d8e3ffd4f0ec22ff62c122ed504f2e6/src/names.csv). Read the `Name` column, clean and split as follows:
+
+```python
+import csv
+import re
+
+with open("names.csv", encoding="utf-8-sig", newline="") as f:
+    names = sorted({re.sub(r"[^a-z]", "", row["Name"].lower())
+                    for row in csv.DictReader(f)} - {""})
+assert len(names) == 6478
+
+g = torch.Generator().manual_seed(42)
+order = torch.randperm(len(names), generator=g).tolist()
+train_names = [names[i] for i in order[:5182]]
+val_names = [names[i] for i in order[5182:5829]]
+test_names = [names[i] for i in order[5829:]]
+stoi = {ch: i for i, ch in enumerate("-abcdefghijklmnopqrstuvwxyz")}
+```
+
+Split **whole names before making examples**, so a name's windows cannot appear in different splits. These are rounded 80/10/10 splits. Token 0 (`-`) is used for both start padding and the end of a name; letters have IDs 1–26. Reuse the same name sets in Q2–Q4.
+
+For Q2, start each name with three zeros. For each character in `name + "-"`, save the current context and next-character target, then slide the context.
+
+For Q3 and Q4, use this helper:
+
+```python
+def attention_examples(split_names):
+    X, Y, valid = [], [], []
+    for name in split_names:
+        seq = [0] * 8 + [stoi[ch] for ch in name] + [0]
+        for start in range(len(name) + 1):
+            X.append(seq[start:start + 8])
+            Y.append(seq[start + 1:start + 9])
+            valid.append([start + j + 1 >= 8 for j in range(8)])
+    return (torch.tensor(X, dtype=torch.long),
+            torch.tensor(Y, dtype=torch.long),
+            torch.tensor(valid, dtype=torch.bool))
+```
+
+`Y` is the input shifted by one character. `valid` excludes artificial start-padding **targets**, but includes real letters and the final end token. Keep all input rows available to attention. For training, take unreduced cross-entropy at the entries where `valid` is true and average them. For validation and test, use `logits[:, -1, :]` against `Y[:, -1]` only.
+
+</details>
+
+## Before you submit
+
+Run the notebook top to bottom and save it with all outputs visible. Label your plots, use your own measured numbers in the explanations, and add a short note about any AI tools you used. Each question's 4 marks cover the requested experiment, outputs, and explanation. A clear, correct result earns credit even when the trend differs from what you expected.
