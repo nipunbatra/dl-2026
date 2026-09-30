@@ -14,7 +14,9 @@ Submit one notebook named:
 a2_<rollno>.ipynb
 ```
 
-Save it with all outputs visible and a short note about any AI tools you used. The [deadline](../deadlines.qmd) is unchanged. Your score out of 20 is scaled to the assignment's 13 course marks.
+Save it with all outputs visible and a short note about any AI tools you used. Your score out of 20 is scaled to the assignment's 13 course marks.
+
+**Released:** 30 September 2026. **Due:** 8 October 2026 at 6:30 pm IST. The assignment quiz is also on **8 October 2026 at 6:30 pm IST**. See [Deadlines](../deadlines.qmd) for the course schedule.
 
 ## Data and training
 
