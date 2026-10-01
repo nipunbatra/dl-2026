@@ -1,0 +1,45 @@
+<script>
+(() => {
+  const preferenceKey = 'dl-2026-theme';
+  const root = document.documentElement;
+  let button;
+
+  function apply(theme) {
+    root.setAttribute('data-bs-theme', theme === 'dark' ? 'dark' : 'light');
+    if (!button) return;
+    const dark = root.getAttribute('data-bs-theme') === 'dark';
+    const label = dark ? 'Switch to light mode' : 'Switch to dark mode';
+    button.setAttribute('aria-label', label);
+    button.title = label;
+    button.querySelector('i').className = dark ? 'bi bi-sun' : 'bi bi-moon';
+  }
+
+  // Apply the saved choice before the page paints. First-time visitors see light mode.
+  let saved;
+  try { saved = localStorage.getItem(preferenceKey); } catch {}
+  apply(saved);
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const tools = document.querySelector('.navbar .quarto-navbar-tools');
+    if (!tools) return;
+    button = document.createElement('button');
+    button.type = 'button';
+    button.id = 'course-theme-toggle';
+    button.className = 'course-theme-toggle';
+    const icon = document.createElement('i');
+    icon.setAttribute('aria-hidden', 'true');
+    button.append(icon);
+    tools.prepend(button);
+    apply(root.getAttribute('data-bs-theme'));
+    button.addEventListener('click', () => {
+      const theme = root.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+      apply(theme);
+      try { localStorage.setItem(preferenceKey, theme); } catch {}
+    });
+  });
+
+  window.addEventListener('storage', event => {
+    if (event.key === preferenceKey) apply(event.newValue);
+  });
+})();
+</script>

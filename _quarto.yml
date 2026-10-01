@@ -32,6 +32,7 @@ format:
     toc: false
     page-layout: article
     link-external-newwindow: true
+    include-in-header: course-theme.html
     include-after-body: course-tools.html
 
 execute:

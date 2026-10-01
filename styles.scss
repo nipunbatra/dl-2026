@@ -89,10 +89,6 @@ $callout-color-important: $primary;
   --bs-highlight-bg: var(--course-selected);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-bs-theme="light"]) { @include course-dark-tokens; }
-}
-
 :root[data-bs-theme="dark"] { @include course-dark-tokens; }
 
 body {
@@ -225,6 +221,23 @@ body:has(.lecture-library) main.content { max-width: none; }
   transform: translateY(-50%);
 }
 .navbar .bi { color: var(--course-ink); }
+
+.course-theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--course-ink);
+  cursor: pointer;
+}
+.course-theme-toggle:hover { background: var(--course-soft); }
+.course-theme-toggle .bi { font-size: 20px; line-height: 1; }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--course-ink);
@@ -521,6 +534,21 @@ mjx-container[display="true"] { max-width: 100%; overflow-x: auto; overflow-y: h
 .nav-footer-right { min-width: 0; }
 .nav-footer a { color: var(--course-accent); }
 
+@media (max-width: 991.98px) {
+  .navbar .navbar-container {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto auto;
+    column-gap: 6px;
+  }
+  .navbar .navbar-toggler { grid-column: 1; grid-row: 1; }
+  .navbar .navbar-brand-container { grid-column: 2; grid-row: 1; max-width: none; }
+  .navbar .quarto-navbar-tools { grid-column: 3; grid-row: 1; }
+  .navbar #quarto-search { grid-column: 4; grid-row: 1; margin-left: 0; }
+  .navbar .navbar-collapse { grid-column: 1 / -1; grid-row: 2; }
+  .navbar-title { white-space: nowrap; }
+  .navbar-title::after { white-space: normal; }
+}
+
 @media (max-width: 700px) {
   #quarto-content { padding: 24px; }
   main.content { margin-top: 24px; }
@@ -548,6 +576,7 @@ mjx-container[display="true"] { max-width: 100%; overflow-x: auto; overflow-y: h
 }
 
 @media (pointer: coarse) {
+  .course-theme-toggle { width: 44px; height: 44px; }
   .navbar-nav .nav-link,
   .aa-DetachedSearchButton,
   .aa-DetachedCancelButton,
