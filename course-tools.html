@@ -1,0 +1,109 @@
+<script>
+(() => {
+  // Keep policy and assignment tables intact; contain wide mathematical tables.
+  document.querySelectorAll('main.content table').forEach(table => {
+    if (table.parentElement.classList.contains('course-table-scroll')) return;
+    const wrapper = document.createElement('div');
+    wrapper.className = 'course-table-scroll';
+    wrapper.setAttribute('role', 'region');
+    wrapper.setAttribute('aria-label', 'Scrollable table');
+    wrapper.tabIndex = 0;
+    table.before(wrapper);
+    wrapper.append(table);
+    if (table.rows[0]?.cells.length <= 2) table.classList.add('course-table-compact');
+  });
+  // Quarto 1.4 uses div headers for its FAQ disclosures. Support keyboard input.
+  document.querySelectorAll('.callout-header[data-bs-toggle="collapse"]').forEach(header => {
+    header.setAttribute('role', 'button');
+    header.tabIndex = 0;
+    header.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        header.click();
+      }
+    });
+  });
+  const library = document.querySelector('.lecture-library');
+  if (!library) return;
+  const sections = [...library.querySelectorAll('.lecture-section')];
+  const rows = [...library.querySelectorAll('.lecture-row')];
+  const modules = [...document.querySelectorAll('.lecture-jump [data-module]')];
+  const query = document.getElementById('lecture-query');
+  const format = document.getElementById('lecture-format');
+  const count = document.getElementById('lecture-result-count');
+  const reset = document.getElementById('lecture-reset');
+  const empty = document.querySelector('.library-empty');
+  let module = 'all';
+  rows.forEach(row => row.dataset.searchText = row.textContent.toLowerCase().replace(/\s+/g, ' '));
+
+  function apply() {
+    const term = query.value.trim().toLowerCase();
+    const numberQuery = term.match(/^(?:lecture\s*)?0*(\d{1,2})$/);
+    let visible = 0;
+    rows.forEach(row => {
+      const inModule = term || module === 'all' || row.closest('.lecture-section').id === module;
+      const inQuery = !term || (numberQuery ? Number(row.id.slice(8)) === Number(numberQuery[1]) : row.dataset.searchText.includes(term));
+      const inFormat = format.value === 'all' || row.dataset.resourceTypes.split(' ').includes(format.value);
+      row.hidden = !(inModule && inQuery && inFormat);
+      if (!row.hidden) visible++;
+    });
+    sections.forEach(section => section.hidden = ![...section.querySelectorAll('.lecture-row')].some(row => !row.hidden));
+    modules.forEach(control => {
+      const active = !term && control.dataset.module === module;
+      control.dataset.active = String(active);
+      if (control.tagName === 'BUTTON') control.setAttribute('aria-pressed', String(active));
+      else if (active) control.setAttribute('aria-current', 'true');
+      else control.removeAttribute('aria-current');
+    });
+    count.textContent = `${visible} lecture${visible === 1 ? '' : 's'}${term ? ' matching across the course' : ''}`;
+    reset.hidden = !term && format.value === 'all' && module === 'all';
+    empty.hidden = visible !== 0;
+  }
+  function showAll(clearHash = false) {
+    module = 'all';
+    query.value = '';
+    format.value = 'all';
+    apply();
+    if (clearHash) history.pushState(null, '', window.location.pathname + window.location.search);
+  }
+  modules.forEach(control => {
+    control.hidden = false;
+    control.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      module = control.dataset.module;
+      query.value = '';
+      apply();
+      const path = window.location.pathname + window.location.search;
+      history.pushState(null, '', module === 'all' ? path : path + '#' + module);
+    });
+  });
+  query.addEventListener('input', apply);
+  format.addEventListener('change', apply);
+  reset.addEventListener('click', () => showAll(true));
+  document.querySelector('.library-tools').hidden = false;
+  document.querySelector('.library-result-row').hidden = false;
+  // Preserve existing links to individual lectures, including after filtering.
+  function revealHash() {
+    const id = window.location.hash.slice(1);
+    if (!id) { showAll(); return; }
+    const target = document.getElementById(id);
+    const row = target?.closest('.lecture-row');
+    const section = target?.closest('.lecture-section');
+    if (row) {
+      showAll();
+      requestAnimationFrame(() => row.scrollIntoView({block:'start'}));
+    } else if (section) {
+      module = section.id;
+      query.value = '';
+      format.value = 'all';
+      apply();
+      requestAnimationFrame(() => section.scrollIntoView({block:'start'}));
+    }
+  }
+  window.addEventListener('hashchange', revealHash);
+  window.addEventListener('popstate', revealHash);
+  apply();
+  revealHash();
+})();
+</script>

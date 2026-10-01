@@ -1,57 +1,24 @@
-/* Reading styles for this assignment only. */
-main.content {
-  max-width: 760px;
-}
-
-#title-block-header h1,
-main.content h2,
-main.content h3 {
-  font-family: var(--bs-body-font-family);
-  line-height: 1.25;
-  border-bottom: 0;
-}
-
-#title-block-header h1 {
-  font-size: clamp(1.8rem, 4vw, 2.35rem);
-  letter-spacing: -0.025em;
-  padding-bottom: 0;
-}
-
-main.content h2 {
-  font-size: 1.4rem;
-  margin-top: 2.6rem;
-}
-
-main.content h3 {
-  font-size: 1.08rem;
-  margin-top: 1.6rem;
-  margin-bottom: 0.65rem;
-}
-
-main.content p,
-main.content li {
-  line-height: 1.65;
-}
+/* Assignment-specific code and disclosure spacing; the shared theme owns type and colour. */
 
 main.content pre {
   max-width: 100%;
   padding: 0.9rem 1rem;
-  border: 1px solid #e1ded8;
+  border: 1px solid var(--course-line);
   border-radius: 4px;
-  background: #f7f6f3;
+  background: var(--course-soft);
   overflow-x: auto;
 }
 
 main.content pre code {
-  color: #252525;
+  color: var(--course-ink);
   background: transparent;
   font-size: 0.87rem;
   white-space: pre;
 }
 
 main.content details {
-  border-top: 1px solid #dedad3;
-  border-bottom: 1px solid #dedad3;
+  border-top: 1px solid var(--course-line);
+  border-bottom: 1px solid var(--course-line);
   padding: 0.9rem 0;
 }
 
@@ -62,12 +29,10 @@ main.content summary {
 }
 
 main.content summary:focus-visible {
-  outline: 2px solid #9b2f2f;
+  outline: 2px solid var(--course-accent);
   outline-offset: 4px;
 }
 
 @media (max-width: 600px) {
-  main.content h2 { font-size: 1.25rem; }
-  main.content h3 { font-size: 1.03rem; }
   main.content pre { padding: 0.75rem; }
 }

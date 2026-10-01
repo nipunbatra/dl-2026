@@ -8,6 +8,7 @@ website:
   description: "Deep Learning at IIT Gandhinagar"
   navbar:
     title: "ES 667"
+    background: light
     left:
       - href: index.qmd
         text: Home
@@ -31,6 +32,7 @@ format:
     toc: false
     page-layout: article
     link-external-newwindow: true
+    include-after-body: course-tools.html
 
 execute:
   freeze: auto

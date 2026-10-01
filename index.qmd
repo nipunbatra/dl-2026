@@ -1,28 +1,40 @@
 ---
-title: "ES 667: Deep Learning"
+title: "Deep Learning"
 subtitle: "IIT Gandhinagar · Semester I, 2026–27"
+page-layout: full
 ---
 
-- **Instructor:** [Prof. Nipun Batra](https://nipunbatra.github.io)
-- **Email:** nipun.batra@iitgn.ac.in
-- **Office:** 13/401C
-- **Credits:** 3-0-0-4
+```{=html}
+<p class="course-home-intro">ES 667 develops deep-learning models from their statistical and computational foundations.</p>
+<div class="course-home-meta" aria-label="Course information">
+  <span>Instructor <a href="https://nipunbatra.github.io">Prof. Nipun Batra</a></span>
+  <span>Office 13/401C</span>
+  <span>Credits 3-0-0-4</span>
+  <a href="mailto:nipun.batra@iitgn.ac.in">nipun.batra@iitgn.ac.in</a>
+</div>
+<div class="course-home-links">
+  <a class="course-home-link course-home-primary" href="schedule.html">
+    <i class="bi bi-collection" aria-hidden="true"></i>
+    <span><strong class="course-home-link-title">Lecture library</strong><span class="course-home-link-detail">Notes, slides, cheat sheets, notebooks and videos</span></span>
+  </a>
+  <div class="course-home-group">
+    <i class="bi bi-journal-code" aria-hidden="true"></i>
+    <div><h2 class="course-home-link-title">Assignments</h2><div class="course-home-group-links"><a href="Assignments/assignment1_optimization.html">Assignment 1 · Optimization</a><a href="Assignments/assignment2.html">Assignment 2 · Small models and attention</a></div></div>
+  </div>
+  <div class="course-home-group">
+    <i class="bi bi-clipboard-check" aria-hidden="true"></i>
+    <div><h2 class="course-home-link-title">Assessment</h2><span class="course-home-link-detail">Course policies and submission dates</span><div class="course-home-group-links"><a href="grading.html">Grading</a><a href="deadlines.html">Deadlines</a></div></div>
+  </div>
+  <div class="course-home-group">
+    <i class="bi bi-question-circle" aria-hidden="true"></i>
+    <div><h2 class="course-home-link-title">Course help</h2><span class="course-home-link-detail">Questions, announcements and discussion</span><div class="course-home-group-links"><a href="faq.html">Course FAQ</a><a href="https://join.slack.com/t/dl26workspace/shared_invite/zt-43b3v79vb-bVZl1_sJVCrBkVMDsq5TYA">Slack workspace</a></div></div>
+  </div>
+</div>
+```
 
-ES 667 develops deep-learning models from their statistical and computational foundations. The course begins with likelihood, loss functions, and multilayer networks, and proceeds to convolutional models, sequence models, Transformers, representation learning, and generative models.
+## Course overview
 
-## Current topics
-
-- **1 October 2026 · From Attention to Applications.** Encoder, decoder-only and encoder–decoder Transformers, with worked examples of self-attention and cross-attention. [Watch the recording (52 minutes)](https://youtu.be/sm2ZeDY8YDw) · [HTML slides](https://nipunbatra.github.io/dl-teaching/interactives/from-attention-to-applications/) · [PDF slides](https://nipunbatra.github.io/dl-teaching/interactives/from-attention-to-applications/from-attention-to-applications.pdf).
-- **2 October 2026 · Vision Transformers.** Please watch the recording above and review the slides before class. [Lecture materials](schedule.qmd#lecture-16).
-- **Week of 5 October 2026 · CLIP and vision–language models.** Planned topics: contrastive image–text learning, shared representations, and zero-shot classification.
-
-## Course links
-
-- [Lecture library](schedule.qmd)
-- [Lecture slides and notebooks](https://nipunbatra.github.io/dl-teaching/)
-- [Assignment 2 · Names and attention](Assignments/assignment2.qmd)
-- [Grading](grading.qmd) and [deadlines](deadlines.qmd)
-- [Slack workspace](https://join.slack.com/t/dl26workspace/shared_invite/zt-43b3v79vb-bVZl1_sJVCrBkVMDsq5TYA)
+The course begins with likelihood, loss functions and multilayer networks, and proceeds to convolutional models, sequence models, Transformers, representation learning and generative models.
 
 ## References
 
@@ -30,4 +42,4 @@ There is no required textbook. Useful references include:
 
 - Simon J. D. Prince, *Understanding Deep Learning* ([online edition](https://udlbook.github.io/udlbook/))
 - Christopher M. Bishop and Hugh Bishop, *Deep Learning: Foundations and Concepts*
-- Aston Zhang, Zachary C. Lipton, Mu Li, and Alexander J. Smola, *Dive into Deep Learning* ([online edition](https://d2l.ai/))
+- Aston Zhang, Zachary C. Lipton, Mu Li and Alexander J. Smola, *Dive into Deep Learning* ([online edition](https://d2l.ai/))

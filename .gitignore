@@ -9,3 +9,6 @@ __pycache__/
 
 # Private teaching-date ledger; public pages use serial numbers only.
 /.course-dates.local.md
+
+# Shared progressive enhancements included by Quarto.
+!/course-tools.html
