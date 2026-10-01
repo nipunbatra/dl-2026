@@ -221,6 +221,7 @@ body:has(.lecture-library) main.content { max-width: none; }
   transform: translateY(-50%);
 }
 .navbar .bi { color: var(--course-ink); }
+.navbar #quarto-search .aa-SubmitIcon { color: var(--course-ink) !important; }
 
 .course-theme-toggle {
   display: inline-flex;
