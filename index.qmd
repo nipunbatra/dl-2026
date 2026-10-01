@@ -10,6 +10,12 @@ subtitle: "IIT Gandhinagar · Semester I, 2026–27"
 
 ES 667 develops deep-learning models from their statistical and computational foundations. The course begins with likelihood, loss functions, and multilayer networks, and proceeds to convolutional models, sequence models, Transformers, representation learning, and generative models.
 
+## Current topics
+
+- **1 October 2026 · From Attention to Applications.** Encoder, decoder-only and encoder–decoder Transformers, with worked examples of self-attention and cross-attention. [Watch the recording (52 minutes)](https://youtu.be/sm2ZeDY8YDw) · [HTML slides](https://nipunbatra.github.io/dl-teaching/interactives/from-attention-to-applications/) · [PDF slides](https://nipunbatra.github.io/dl-teaching/interactives/from-attention-to-applications/from-attention-to-applications.pdf).
+- **2 October 2026 · Vision Transformers.** Please watch the recording above and review the slides before class. [Lecture materials](schedule.qmd#lecture-16).
+- **Week of 5 October 2026 · CLIP and vision–language models.** Planned topics: contrastive image–text learning, shared representations, and zero-shot classification.
+
 ## Course links
 
 - [Lecture library](schedule.qmd)

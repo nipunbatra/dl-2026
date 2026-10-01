@@ -9,8 +9,8 @@ css: lecture-library.css
   <a href="#foundations"><span>Foundations</span><span class="jump-range">1–4</span></a>
   <a href="#gradients-optimization"><span>Optimization</span><span class="jump-range">5–9</span></a>
   <a href="#generalization"><span>Generalization</span><span class="jump-range">10</span></a>
-  <a href="#attention-and-language"><span>Attention</span><span class="jump-range">11–14</span></a>
-  <a href="#vision"><span>Vision</span><span class="jump-range">15</span></a>
+  <a href="#attention-and-language"><span>Attention</span><span class="jump-range">11–15</span></a>
+  <a href="#vision"><span>Vision and language</span><span class="jump-range">16–17</span></a>
 </nav>
 <div class="lecture-library">
 <section id="foundations" class="lecture-section" aria-labelledby="foundations-title">
@@ -266,7 +266,7 @@ css: lecture-library.css
   </article>
 </section>
 <section id="attention-and-language" class="lecture-section" aria-labelledby="attention-and-language-title">
-  <header class="lecture-section-head"><h2 id="attention-and-language-title">Attention and language</h2><span>Lectures 11–14</span></header>
+  <header class="lecture-section-head"><h2 id="attention-and-language-title">Attention and language</h2><span>Lectures 11–15</span></header>
   <article id="lecture-11" class="lecture-row" aria-labelledby="lecture-11-title">
     <div class="lecture-number"><span class="visually-hidden">Lecture </span>11</div>
     <div class="lecture-topic">
@@ -309,6 +309,7 @@ css: lecture-library.css
     <div class="lecture-number"><span class="visually-hidden">Lecture </span>13</div>
     <div class="lecture-topic">
       <h3 id="lecture-13-title">Self-attention, continued</h3>
+      <p>Embedding updates, next-token prediction, and positional encoding.</p>
     </div>
     <div class="lecture-resources" aria-label="Lecture 13 resources">
       <div class="resource-actions"><a href="https://nipunbatra.github.io/attention/attention.html" aria-label="Read lecture — lecture 13">Read lecture</a><a href="https://nipunbatra.github.io/attention/attention.html?present" aria-label="Present — lecture 13">Present</a><a href="https://nipunbatra.github.io/dl-teaching/slides-pdf/P02-cheatsheet.pdf" aria-label="Cheatsheet — lecture 13">Cheatsheet</a></div>
@@ -340,17 +341,41 @@ css: lecture-library.css
       </div>
     </div>
   </article>
-</section>
-<section id="vision" class="lecture-section" aria-labelledby="vision-title">
-  <header class="lecture-section-head"><h2 id="vision-title">Vision</h2><span>Lecture 15</span></header>
   <article id="lecture-15" class="lecture-row" aria-labelledby="lecture-15-title">
     <div class="lecture-number"><span class="visually-hidden">Lecture </span>15</div>
     <div class="lecture-topic">
-      <h3 id="lecture-15-title">Vision Transformer for image classification</h3>
-      <span class="lecture-status">Upcoming</span>
+      <h3 id="lecture-15-title">From Attention to Applications</h3>
+      <p>Encoder, decoder-only and encoder–decoder Transformers; token and sentence classification; causal self-attention and cross-attention.</p>
+      <span class="lecture-status">Recording · <time datetime="2026-10-01">1 October 2026</time> · 52 minutes</span>
     </div>
     <div class="lecture-resources" aria-label="Lecture 15 resources">
-      <div class="resource-actions"><a href="https://nipunbatra.github.io/attention/vision1.html" aria-label="Read lecture — lecture 15">Read lecture</a><a href="https://nipunbatra.github.io/attention/vision1.html?present" aria-label="Present — lecture 15">Present</a></div>
+      <div class="resource-actions"><a href="https://nipunbatra.github.io/dl-teaching/interactives/from-attention-to-applications/" aria-label="HTML slides — lecture 15">HTML slides</a><a href="https://nipunbatra.github.io/dl-teaching/interactives/from-attention-to-applications/?present#title" aria-label="Present — lecture 15">Present</a><a href="https://nipunbatra.github.io/dl-teaching/interactives/from-attention-to-applications/from-attention-to-applications.pdf" aria-label="PDF slides — lecture 15">PDF slides</a><a href="https://youtu.be/sm2ZeDY8YDw" aria-label="Full recording — lecture 15">Watch recording</a></div>
+      <p>Preparation for the Vision Transformers lecture on 2 October.</p>
+    </div>
+  </article>
+</section>
+<section id="vision" class="lecture-section" aria-labelledby="vision-title">
+  <header class="lecture-section-head"><h2 id="vision-title">Vision and language</h2><span>Lectures 16–17</span></header>
+  <article id="lecture-16" class="lecture-row" aria-labelledby="lecture-16-title">
+    <div class="lecture-number"><span class="visually-hidden">Lecture </span>16</div>
+    <div class="lecture-topic">
+      <h3 id="lecture-16-title">Vision Transformer for image classification</h3>
+      <p>Image patches, positional embeddings, self-attention, and image classification.</p>
+      <span class="lecture-status">Next class · <time datetime="2026-10-02">2 October 2026</time></span>
+    </div>
+    <div class="lecture-resources" aria-label="Lecture 16 resources">
+      <div class="resource-actions"><a href="https://nipunbatra.github.io/attention/vision1.html" aria-label="Read lecture — lecture 16">Read lecture</a><a href="https://nipunbatra.github.io/attention/vision1.html?present" aria-label="Present — lecture 16">Present</a></div>
+    </div>
+  </article>
+  <article id="lecture-17" class="lecture-row" aria-labelledby="lecture-17-title">
+    <div class="lecture-number"><span class="visually-hidden">Lecture </span>17</div>
+    <div class="lecture-topic">
+      <h3 id="lecture-17-title">CLIP and vision–language models</h3>
+      <p>Contrastive image–text learning, shared representations, and zero-shot classification.</p>
+      <span class="lecture-status">Planned · week of <time datetime="2026-10-05">5 October 2026</time></span>
+    </div>
+    <div class="lecture-resources" aria-label="Lecture 17 resources">
+      <p>Lecture materials will be added here.</p>
     </div>
   </article>
 </section>
