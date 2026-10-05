@@ -1,0 +1,823 @@
+[
+ {
+  "id": "foundations-title",
+  "name": "Foundations",
+  "lectures": [
+   {
+    "n": "1",
+    "title": "Where Deep Learning Losses Come From I",
+    "sub": "Distributions, likelihood, and loss.",
+    "buttons": [
+     [
+      "Notes",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf"
+     ],
+     [
+      "Slides",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L1-presentation.pdf"
+     ],
+     [
+      "Cheat sheet",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/S01-cheatsheet.pdf"
+     ]
+    ],
+    "extras": [
+     {
+      "kind": "resource-short",
+      "title": "3-minute summaries",
+      "items": [
+       [
+        "Where do loss functions come from?",
+        "https://www.youtube.com/watch?v=8-HcIIqmmsw",
+        "2:54"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "n": "2",
+    "title": "Where Deep Learning Losses Come From II",
+    "sub": "MLE, regression, and classification.",
+    "buttons": [
+     [
+      "Notes",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf"
+     ],
+     [
+      "Slides",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L1-presentation.pdf"
+     ],
+     [
+      "Cheat sheet",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/S02-cheatsheet.pdf"
+     ]
+    ],
+    "extras": [
+     {
+      "kind": "resource-short",
+      "title": "3-minute summaries",
+      "items": [
+       [
+        "Where MSE and cross-entropy come from",
+        "https://www.youtube.com/watch?v=HO9Tj5VUGfs",
+        "2:53"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "n": "3",
+    "title": "Likelihood to Loss in Practice",
+    "sub": "MAP, regularization, and robust observation models.",
+    "buttons": [
+     [
+      "Notes",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L1.pdf"
+     ],
+     [
+      "Lecture slides",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L1-presentation.pdf"
+     ],
+     [
+      "Cheat sheet",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/S03-cheatsheet.pdf"
+     ]
+    ],
+    "extras": [
+     {
+      "kind": "resource-code",
+      "title": "Practice notebooks",
+      "items": [
+       [
+        "Likelihood notebook",
+        "https://nipunbatra.github.io/dl-teaching/notebooks/L01/00_likelihood_iid_worked_examples.html",
+        ""
+       ],
+       [
+        "Robust regression",
+        "https://nipunbatra.github.io/dl-teaching/notebooks/L01/03_robust_linear_regression.html",
+        ""
+       ]
+      ]
+     },
+     {
+      "kind": "resource-short",
+      "title": "3-minute summaries",
+      "items": [
+       [
+        "Outliers: how the noise model picks the loss",
+        "https://www.youtube.com/watch?v=-au-iIaujvQ",
+        "2:55"
+       ],
+       [
+        "Priors: where regularization comes from",
+        "https://www.youtube.com/watch?v=caceJmOSU9g",
+        "2:54"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "n": "4",
+    "title": "From Linear Models to Neural Networks",
+    "sub": "Neurons, activations, multilayer networks, XOR, and approximation.",
+    "buttons": [
+     [
+      "Notes",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L2.pdf"
+     ],
+     [
+      "Slides",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L2-presentation.pdf"
+     ],
+     [
+      "Cheat sheet",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/S04-cheatsheet.pdf"
+     ]
+    ],
+    "extras": [
+     {
+      "kind": "resource-code",
+      "title": "Practice notebooks",
+      "items": [
+       [
+        "Linear gradient descent",
+        "https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L02/01_linear_regression_gd.ipynb",
+        ""
+       ],
+       [
+        "XOR",
+        "https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L02/02_mlp_xor.ipynb",
+        ""
+       ]
+      ]
+     },
+     {
+      "kind": "resource-short",
+      "title": "3-minute summaries",
+      "items": [
+       [
+        "From weighted sums to neurons: solving XOR",
+        "https://www.youtube.com/watch?v=DYmy_HVexUY",
+        "2:59"
+       ],
+       [
+        "ReLU hinges and universal approximation",
+        "https://www.youtube.com/watch?v=kRBao9ic-Kk",
+        "2:53"
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "gradients-optimization-title",
+  "name": "Gradients and optimization",
+  "lectures": [
+   {
+    "n": "5",
+    "title": "Optimization I \u2014 Gradient Estimates & Step Sizes",
+    "sub": "Batches, stochastic gradients, and optimizer geometry.",
+    "buttons": [
+     [
+      "Notes",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L5.pdf"
+     ],
+     [
+      "Slides",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L5-presentation.pdf"
+     ],
+     [
+      "Cheat sheet",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/S05-cheatsheet.pdf"
+     ]
+    ],
+    "extras": [
+     {
+      "kind": "resource-recording",
+      "title": "Full recording",
+      "items": [
+       [
+        "Optimization for Deep Learning",
+        "https://www.youtube.com/watch?v=CIdlYRSvnWQ",
+        "31:38"
+       ]
+      ]
+     },
+     {
+      "kind": "resource-short",
+      "title": "3-minute summaries",
+      "items": [
+       [
+        "SGD vs minibatch: how much data per step?",
+        "https://www.youtube.com/watch?v=iByVRBf1nAA",
+        "3:00"
+       ],
+       [
+        "Why gradient descent zigzags: step sizes",
+        "https://www.youtube.com/watch?v=8-f5bE3uBsE",
+        "2:52"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "n": "6",
+    "title": "Backpropagation & Autograd from Scratch",
+    "sub": "Computation graphs, reverse mode, and a scalar engine.",
+    "buttons": [
+     [
+      "Notes",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L3.pdf"
+     ],
+     [
+      "Slides",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L3-presentation.pdf"
+     ],
+     [
+      "Cheat sheet",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/S06-cheatsheet.pdf"
+     ]
+    ],
+    "extras": [
+     {
+      "kind": "resource-code",
+      "title": "Practice notebooks",
+      "items": [
+       [
+        "Colab notebook",
+        "https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L03/04_scalar_autograd_pytorch_to_scratch.ipynb",
+        ""
+       ]
+      ]
+     },
+     {
+      "kind": "resource-recording",
+      "title": "Full recording",
+      "items": [
+       [
+        "Backpropagation and Autograd from Scratch",
+        "https://www.youtube.com/watch?v=I0Omc95jFiA",
+        "19:44"
+       ]
+      ]
+     },
+     {
+      "kind": "resource-short",
+      "title": "3-minute summaries",
+      "items": [
+       [
+        "Backprop by hand: one local rule",
+        "https://www.youtube.com/watch?v=eB7ROt3NFBI",
+        "3:03"
+       ],
+       [
+        "Build a tiny autograd engine from scratch",
+        "https://www.youtube.com/watch?v=9qzBLGoWhg4",
+        "2:59"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "n": "7",
+    "title": "Optimization II \u2014 Momentum, RMSProp & Adam",
+    "sub": "Moving averages and adaptive coordinate scaling.",
+    "buttons": [
+     [
+      "Notes",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L5.pdf"
+     ],
+     [
+      "Slides",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L5-presentation.pdf"
+     ],
+     [
+      "Cheat sheet",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/S07-cheatsheet.pdf"
+     ]
+    ],
+    "extras": [
+     {
+      "kind": "resource-recording",
+      "title": "Full recordings",
+      "items": [
+       [
+        "Momentum in Deep Learning",
+        "https://www.youtube.com/watch?v=ZaQ-gIYSv_A",
+        "29:50"
+       ],
+       [
+        "Momentum, RMSProp and Adam",
+        "https://www.youtube.com/watch?v=dobX7TW_DuE",
+        "23:30"
+       ]
+      ]
+     },
+     {
+      "kind": "resource-short",
+      "title": "3-minute summaries",
+      "items": [
+       [
+        "Momentum: averaging away the zigzag",
+        "https://www.youtube.com/watch?v=lgYjBXYG6dA",
+        "3:03"
+       ],
+       [
+        "RMSProp and Adam: a step size per coordinate",
+        "https://www.youtube.com/watch?v=DBrnsa8tKqo",
+        "3:14"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "n": "8",
+    "title": "Vector, Matrix & Affine Autograd",
+    "sub": "Gradients, Jacobians, dense layers, and batched VJPs.",
+    "buttons": [
+     [
+      "Calculus notes",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L3A.pdf"
+     ],
+     [
+      "Autograd notes",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L3.pdf"
+     ],
+     [
+      "Calculus slides",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L3A-presentation.pdf"
+     ],
+     [
+      "Autograd slides",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L3-presentation.pdf"
+     ],
+     [
+      "Cheat sheet",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/S08-cheatsheet.pdf"
+     ]
+    ],
+    "extras": [
+     {
+      "kind": "resource-code",
+      "title": "Practice notebooks",
+      "items": [
+       [
+        "Colab notebook",
+        "https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L03/00_backprop_autograd_complete.ipynb",
+        ""
+       ]
+      ]
+     },
+     {
+      "kind": "resource-short",
+      "title": "3-minute summaries",
+      "items": [
+       [
+        "Backprop through layers: Jacobians to batches",
+        "https://www.youtube.com/watch?v=HjxjfiUDoMM",
+        "3:04"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "n": "9",
+    "title": "Valid Outputs by Design & Learning-Rate Schedules",
+    "sub": "Constrained parameters, warmup, decay, and cosine.",
+    "buttons": [
+     [
+      "Valid outputs notes",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L5B.pdf"
+     ],
+     [
+      "LR schedule notes",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L5C.pdf"
+     ],
+     [
+      "Valid outputs slides",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L5B-presentation.pdf"
+     ],
+     [
+      "LR schedule slides",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L5C-presentation.pdf"
+     ],
+     [
+      "Cheat sheet",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/S09-cheatsheet.pdf"
+     ]
+    ],
+    "extras": [
+     {
+      "kind": "resource-short",
+      "title": "3-minute summaries",
+      "items": [
+       [
+        "Valid outputs by design: softplus to softmax",
+        "https://www.youtube.com/watch?v=uX6uBg6iZ1Y",
+        "2:59"
+       ],
+       [
+        "Learning-rate schedules: warmup, decay, cosine",
+        "https://www.youtube.com/watch?v=sdRB7dRrJxQ",
+        "2:53"
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "generalization-title",
+  "name": "Generalization",
+  "lectures": [
+   {
+    "n": "10",
+    "title": "Generalization & Regularization",
+    "sub": "Learning curves, weight decay, early stopping, dropout, augmentation, Mixup, and label smoothing.",
+    "buttons": [
+     [
+      "Notes",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L7.pdf"
+     ],
+     [
+      "Slides",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/L7-presentation.pdf"
+     ],
+     [
+      "Cheat sheet",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/S10-cheatsheet.pdf"
+     ]
+    ],
+    "extras": [
+     {
+      "kind": "resource-code",
+      "title": "Practice notebooks",
+      "items": [
+       [
+        "Learning curves",
+        "https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L07/01_overfitting_and_early_stopping.ipynb",
+        ""
+       ],
+       [
+        "Dropout and regularization",
+        "https://colab.research.google.com/github/nipunbatra/dl-teaching/blob/master/notebooks/L07/02_dropout_from_scratch.ipynb",
+        ""
+       ]
+      ]
+     },
+     {
+      "kind": "resource-short",
+      "title": "3-minute summaries",
+      "items": [
+       [
+        "Overfitting, weight decay and early stopping",
+        "https://www.youtube.com/watch?v=5KFtpC9h83U",
+        "3:08"
+       ],
+       [
+        "Dropout, augmentation, Mixup and label smoothing",
+        "https://www.youtube.com/watch?v=vchXFxKOYyQ",
+        "3:08"
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "attention-and-language-title",
+  "name": "Attention and language",
+  "lectures": [
+   {
+    "n": "11",
+    "title": "From characters to next-token prediction",
+    "sub": "Tokenization, learned embeddings, a hidden-layer MLP, training, and generation.",
+    "buttons": [
+     [
+      "Notes",
+      "https://nipunbatra.github.io/attention/part1.html"
+     ],
+     [
+      "Slides",
+      "https://nipunbatra.github.io/attention/part1.html?present"
+     ],
+     [
+      "Cheat sheet",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/P01-cheatsheet.pdf"
+     ]
+    ],
+    "extras": [
+     {
+      "kind": "resource-recording",
+      "title": "Full recording",
+      "items": [
+       [
+        "Language Modeling: From Characters to Next-Token Prediction",
+        "https://www.youtube.com/watch?v=ZVi1CzLFmzk",
+        "1:06:54"
+       ]
+      ]
+     },
+     {
+      "kind": "resource-short",
+      "title": "3-minute summaries",
+      "items": [
+       [
+        "Next-token prediction from scratch",
+        "https://www.youtube.com/watch?v=1qza_VPINVE",
+        "3:01"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "n": "12",
+    "title": "Self-attention, from first principles",
+    "sub": "",
+    "buttons": [
+     [
+      "Notes",
+      "https://nipunbatra.github.io/attention/attention.html"
+     ],
+     [
+      "Slides",
+      "https://nipunbatra.github.io/attention/attention.html?present"
+     ],
+     [
+      "Cheat sheet",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/P02-cheatsheet.pdf"
+     ]
+    ],
+    "extras": [
+     {
+      "kind": "resource-recording",
+      "title": "Full recording",
+      "items": [
+       [
+        "Self-Attention from First Principles",
+        "https://www.youtube.com/watch?v=fRSLf13z6wo",
+        "1:11:18"
+       ]
+      ]
+     },
+     {
+      "kind": "resource-short",
+      "title": "3-minute summaries",
+      "items": [
+       [
+        "Why attention?",
+        "https://www.youtube.com/watch?v=61n3ejzg_8A",
+        "2:32"
+       ],
+       [
+        "Query, key, value",
+        "https://www.youtube.com/watch?v=rRTMW4XjXQo",
+        "3:05"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "n": "13",
+    "title": "Self-attention, continued",
+    "sub": "Embedding updates, next-token prediction, and positional encoding.",
+    "buttons": [
+     [
+      "Notes",
+      "https://nipunbatra.github.io/attention/attention.html"
+     ],
+     [
+      "Slides",
+      "https://nipunbatra.github.io/attention/attention.html?present"
+     ],
+     [
+      "Cheat sheet",
+      "https://nipunbatra.github.io/dl-teaching/slides-pdf/P02-cheatsheet.pdf"
+     ]
+    ],
+    "extras": [
+     {
+      "kind": "resource-short",
+      "title": "3-minute summaries",
+      "items": [
+       [
+        "From attention to prediction",
+        "https://www.youtube.com/watch?v=ff0Ru6TyaDM",
+        "3:12"
+       ],
+       [
+        "Position and order",
+        "https://www.youtube.com/watch?v=mckdFlOaszM",
+        "2:56"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "n": "14",
+    "title": "Self-attention and multi-head attention",
+    "sub": "",
+    "buttons": [
+     [
+      "Self-attention notes",
+      "https://nipunbatra.github.io/attention/attention.html"
+     ],
+     [
+      "Multi-head attention notes",
+      "https://nipunbatra.github.io/attention/part3.html"
+     ],
+     [
+      "Self-attention slides",
+      "https://nipunbatra.github.io/attention/attention.html?present"
+     ],
+     [
+      "Multi-head attention slides",
+      "https://nipunbatra.github.io/attention/part3.html?present"
+     ]
+    ],
+    "extras": []
+   },
+   {
+    "n": "15",
+    "title": "From Attention to Applications",
+    "sub": "Encoder, decoder-only and encoder\u2013decoder Transformers; token and sentence classification; causal self-attention and cross-attention.",
+    "buttons": [
+     [
+      "Interactive notes",
+      "https://nipunbatra.github.io/dl-teaching/interactives/from-attention-to-applications/"
+     ],
+     [
+      "PDF handout",
+      "https://nipunbatra.github.io/dl-teaching/interactives/from-attention-to-applications/from-attention-to-applications.pdf"
+     ],
+     [
+      "Slides",
+      "https://nipunbatra.github.io/dl-teaching/interactives/from-attention-to-applications/?present#title"
+     ]
+    ],
+    "extras": [
+     {
+      "kind": "resource-recording",
+      "title": "Full recording",
+      "items": [
+       [
+        "From Attention to Applications: Encoder, Decoder and Cross-Attention",
+        "https://www.youtube.com/watch?v=sm2ZeDY8YDw",
+        "51:43"
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "vision-title",
+  "name": "Vision and language",
+  "lectures": [
+   {
+    "n": "16",
+    "title": "Vision Transformer for image classification",
+    "sub": "Patch embeddings, full attention, embedding updates and CLS readout; CNN comparisons and image-covering experiments. 55 slides including the cover.",
+    "buttons": [
+     [
+      "Notes",
+      "https://nipunbatra.github.io/attention/vision1.html"
+     ],
+     [
+      "Slides",
+      "https://nipunbatra.github.io/attention/vision1.html?present"
+     ],
+     [
+      "PDF \u00b7 55 pages",
+      "https://nipunbatra.github.io/attention/pdf/vision1.pdf"
+     ]
+    ],
+    "extras": []
+   },
+   {
+    "n": "17",
+    "title": "CLIP: From Fixed Labels to Language-Defined Vision",
+    "sub": "Applications, two encoders, a step-by-step contrastive-loss calculation, zero-shot classification and a full architecture summary.",
+    "buttons": [
+     [
+      "HTML lecture",
+      "https://nipunbatra.github.io/attention/clip/"
+     ],
+     [
+      "Slides",
+      "https://nipunbatra.github.io/attention/clip/?present#cover"
+     ],
+     [
+      "PDF \u00b7 168 pages",
+      "https://nipunbatra.github.io/attention/clip/clip.pdf"
+     ],
+     [
+      "Applications Colab",
+      "https://colab.research.google.com/github/nipunbatra/attention/blob/main/clip/notebooks/clip-applications.ipynb"
+     ]
+    ],
+    "extras": []
+   },
+   {
+    "n": "18",
+    "title": "From CLIP to Vision-Language Models",
+    "sub": "Visual prefixes, cross-attention and learned summaries; architecture diagrams, code walkthroughs, training and generation.",
+    "buttons": [
+     [
+      "HTML lecture",
+      "https://nipunbatra.github.io/attention/from-clip-to-vlm/"
+     ],
+     [
+      "Slides",
+      "https://nipunbatra.github.io/attention/from-clip-to-vlm/?present#cover"
+     ],
+     [
+      "PDF \u00b7 155 pages",
+      "https://nipunbatra.github.io/attention/from-clip-to-vlm/from-clip-to-vlm.pdf"
+     ]
+    ],
+    "extras": []
+   },
+   {
+    "n": "19",
+    "title": "Object Detection: From One Label to a Set of Objects",
+    "sub": "Spatial candidates, target assignment, worked losses, decoding, NMS, evaluation and DETR-style set prediction.",
+    "buttons": [
+     [
+      "HTML lecture",
+      "https://nipunbatra.github.io/attention/object-detection/"
+     ],
+     [
+      "Slides",
+      "https://nipunbatra.github.io/attention/object-detection/?present#title"
+     ],
+     [
+      "PDF \u00b7 133 pages",
+      "https://nipunbatra.github.io/attention/object-detection/object-detection.pdf"
+     ]
+    ],
+    "extras": [
+     {
+      "kind": "resource-code",
+      "title": "Interactive practice",
+      "items": [
+       [
+        "Detector lab: score thresholds and NMS",
+        "https://nipunbatra.github.io/attention/object-detection/lab.html",
+        ""
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "n": "20",
+    "title": "Beyond Boxes: Dense, Structured, and Promptable Vision",
+    "sub": "Semantic, instance and panoptic segmentation; keypoints, depth, promptable masks and language grounding.",
+    "buttons": [
+     [
+      "HTML lecture",
+      "https://nipunbatra.github.io/attention/beyond-boxes/"
+     ],
+     [
+      "Slides",
+      "https://nipunbatra.github.io/attention/beyond-boxes/?present#cover"
+     ],
+     [
+      "PDF \u00b7 60 pages",
+      "https://nipunbatra.github.io/attention/beyond-boxes/beyond-boxes.pdf"
+     ]
+    ],
+    "extras": [
+     {
+      "kind": "resource-code",
+      "title": "Interactive practice",
+      "items": [
+       [
+        "Beyond Boxes lab: masks, pose, depth and grounding",
+        "https://nipunbatra.github.io/attention/beyond-boxes/lab.html",
+        ""
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]
