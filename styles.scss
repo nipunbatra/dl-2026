@@ -219,8 +219,15 @@ main.content .lt tbody tr:hover { background: none; }
 .r:hover .t { text-decoration: underline; text-underline-offset: 3px; }
 .dur { white-space: nowrap; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; margin-left: 2px; }
 .ic { width: 18px; height: 18px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; color: var(--accent); margin-top: -1px; }
-.r-recording .ic, .r-short .ic, .key .ic-recording, .key .ic-short { color: var(--ink); }
-.r-recording .t { font-weight: 600; }
+.r-short .ic, .key .ic-short { color: var(--ink); }
+/* Full recordings stand out: a solid accent button with a filled play icon, also in the key and beside the lecture number */
+.r.r-recording { align-items: center; align-self: flex-start; gap: 6px; padding: 5px 10px 5px 8px; background: var(--accent); color: var(--on-accent); font-weight: 600; }
+.r.r-recording:hover { background: var(--ink); color: var(--paper); }
+.r.r-recording:hover .t { text-decoration: none; }
+.r-recording .ic, .key .ic-recording { color: currentColor; fill: currentColor; stroke: none; width: 16px; height: 16px; margin: 0; }
+.r-recording .dur { color: inherit; opacity: .85; }
+.key span:has(.ic-recording) { background: var(--accent); color: var(--on-accent); padding: 3px 9px 3px 7px; font-weight: 600; }
+.lt tr:has(.r-recording) td.no::after { content: 'Video'; display: block; width: max-content; margin-top: 6px; padding: 2px 5px; font: 600 10px/1.3 var(--body); letter-spacing: .06em; text-transform: uppercase; color: var(--on-accent); background: var(--accent); }
 .r-notebook .ic, .r-lab .ic, .key .ic-notebook, .key .ic-lab { color: var(--muted); }
 
 /* Assessment */
