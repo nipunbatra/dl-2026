@@ -3,22 +3,21 @@
 main.content pre {
   max-width: 100%;
   padding: 0.9rem 1rem;
-  border: 1px solid var(--course-line);
-  border-radius: 4px;
-  background: var(--course-soft);
+  border: 1px solid var(--rule);
+  background: var(--soft);
   overflow-x: auto;
 }
 
 main.content pre code {
-  color: var(--course-ink);
+  color: var(--ink);
   background: transparent;
   font-size: 0.87rem;
   white-space: pre;
 }
 
 main.content details {
-  border-top: 1px solid var(--course-line);
-  border-bottom: 1px solid var(--course-line);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
   padding: 0.9rem 0;
 }
 
@@ -29,7 +28,7 @@ main.content summary {
 }
 
 main.content summary:focus-visible {
-  outline: 2px solid var(--course-accent);
+  outline: 2px solid var(--accent);
   outline-offset: 4px;
 }
 

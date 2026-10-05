@@ -16,7 +16,7 @@ a2_<rollno>.ipynb
 
 Save it with all outputs visible and a short note about any AI tools you used. Your score out of 20 is scaled to the assignment's 13 course marks.
 
-**Released:** 30 September 2026. **Due:** 8 October 2026 at 6:30 pm IST. The assignment quiz is also on **8 October 2026 at 6:30 pm IST**. See [Deadlines](../deadlines.qmd) for the course schedule.
+**Released:** 30 September 2026. **Due:** 8 October 2026 at 6:30 pm IST. The assignment quiz is also on **8 October 2026 at 6:30 pm IST**. See [Assessment](../assessment.qmd#deadlines) for all course dates.
 
 ## Data and training
 
@@ -321,3 +321,7 @@ stoi = {ch: i for i, ch in enumerate("-abcdefghijklmnopqrstuvwxyz")}
 The start/end token has ID 0; the letters have IDs 1 to 26. Make examples separately within each name split. The final end token is a target, but the three initial padding tokens are not targets. Reset the three-character context for every name.
 
 </details>
+
+## Earlier assignments
+
+[Assignment 1 · Optimization](assignment1_optimization.md), due 27 August 2026.

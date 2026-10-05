@@ -6,33 +6,19 @@ website:
   title: "ES 667 · Deep Learning"
   favicon: favicon.svg
   description: "Deep Learning at IIT Gandhinagar"
-  navbar:
-    title: "ES 667"
-    background: light
-    left:
-      - href: index.qmd
-        text: Home
-      - href: schedule.qmd
-        text: Lectures
-      - href: grading.qmd
-        text: Grading
-      - href: deadlines.qmd
-        text: Deadlines
-      - href: faq.qmd
-        text: FAQ
-      - href: https://nipunbatra.github.io/dl-teaching/
-        text: Materials
-  page-footer:
-    left: "Prof. Nipun Batra · IIT Gandhinagar"
-    right: "[Course materials](https://nipunbatra.github.io/dl-teaching/)"
+  site-url: https://nipunbatra.github.io/dl-2026/
+  search: false
 
 format:
   html:
     theme: [cosmo, styles.scss]
     toc: false
     page-layout: article
+    anchor-sections: false
+    body-classes: dl
     link-external-newwindow: true
     include-in-header: course-theme.html
+    include-before-body: rail.html
     include-after-body: course-tools.html
 
 execute:

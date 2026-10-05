@@ -1,0 +1,21 @@
+<!-- Course dates, shared by Home ("Coming up") and Assessment. Write dates as "08 Oct 26" or "08 Oct 26, 6:30 pm" (IST);
+     the pages grey out past rows and draw the Today line from the date in the browser. -->
+
+::: {.dates}
+
+| Date | Event |
+|---|---|
+| 04 Aug 26 | Course begins |
+| 17 Aug 26 | Add–drop period ends |
+| 19 Aug 26 | [Assignment 1 released](Assignments/assignment1_optimization.md) |
+| 27 Aug 26 | [Assignment 1 due](Assignments/assignment1_optimization.md) |
+| 10 Sep 26 | **Quiz 1** |
+| 30 Sep 26 | [Assignment 2 released](Assignments/assignment2.qmd) |
+| 08 Oct 26, 6:30 pm | [Assignment 2 due](Assignments/assignment2.qmd) |
+| 08 Oct 26, 6:30 pm | **Assignment 2 quiz** |
+| 15 Oct 26 | **Quiz 2** |
+| 16 Oct 26 | Assignment 3 released |
+| 02 Nov 26 | Assignment 3 due |
+| 10 Nov 26 | **Quiz 3** |
+
+:::

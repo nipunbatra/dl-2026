@@ -1,45 +1,10 @@
 ---
 title: "Grading"
+include-in-header:
+  text: |
+    <meta http-equiv="refresh" content="0; url=assessment.html#grading">
+    <link rel="canonical" href="https://nipunbatra.github.io/dl-2026/assessment.html#grading">
+    <meta name="robots" content="noindex">
 ---
 
-::: {.callout-warning}
-This policy is **tentative** until the first week of class.
-:::
-
-Everything is out of **100 marks**.
-
-| Component | Marks | How |
-|---|:---:|---|
-| **Quizzes** | **54** | Three quizzes; your **best two** count, **27 marks each**. |
-| **Assignments** | **39** | Three programming assignments, **13 marks each**. |
-| **Attendance** | **7** | Biometric-tracked (see below). |
-
-## Quizzes — 54
-
-- Three quizzes through the semester; the **best two of three** count, so a single bad day is forgiven.
-- **Closed book.** A mix of short conceptual questions and problems.
-- **No makeup quizzes** — a missed quiz is simply one of the dropped scores.
-
-## Assignments — 39
-
-- **Three** assignments, **13 marks each**, in **Python + PyTorch**. Each extends code you have already seen in a lecture notebook.
-- Each is a **programming** submission by the deadline.
-- **After the deadline**, every student takes a **short individual quiz / viva** on their own submission — you explain your code, your plots, and your choices. Your marks reflect that conversation, so submit work you can defend.
-
-::: {.callout-note}
-Use AI tools honestly and document meaningful assistance. What is assessed is your ability to explain your own decisions and results in the viva.
-:::
-
-## Attendance — 7
-
-Attendance is recorded on the **biometric system** — it is your responsibility to ensure it registers.
-
-| Classes missed | Marks |
-|:---:|:---:|
-| ≤ 4 | 7 |
-| 5–6 | 5 |
-| 7–8 | 3 |
-| 9–10 | 1 |
-| > 10 | 0 |
-
-There is no leave-request system; a missed class is an absence. For a genuine emergency that forces you to miss several classes in a row, talk to the instructor.
+Grading is now part of the Assessment page: [go to Grading](assessment.html#grading).

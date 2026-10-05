@@ -1,0 +1,45 @@
+---
+title: "Assessment"
+body-classes: dl wide
+---
+
+```{=html}
+<p class="lede">Grading and every dated event in one place. All times are IST. Each assignment is followed by a short individual viva on your own submission, separate from the three course quizzes.</p>
+```
+
+::: {.two .rule-top}
+
+## Dates {#deadlines}
+
+{{< include _dates.qmd >}}
+
+## Grading {#grading}
+
+Everything is out of **100 marks**.
+
+```{=html}
+<table class="t" data-quarto-disable-processing="true">
+<thead><tr><th>Component</th><th>Marks</th><th>How</th></tr></thead>
+<tbody>
+<tr><th>Quizzes</th><td class="big">54</td><td>Three closed-book quizzes, a mix of short conceptual questions and problems. Your <strong>best two</strong> count, 27 marks each. No makeup quizzes: a missed quiz is one of the dropped scores.</td></tr>
+<tr><th>Assignments</th><td class="big">39</td><td>Three programming assignments in Python and PyTorch, 13 marks each, each extending code from a lecture notebook. After each deadline, every student takes a <strong>short individual quiz or viva</strong> on their own submission: you explain your code, your plots and your choices, and your marks reflect that conversation.</td></tr>
+<tr><th>Attendance</th><td class="big">7</td><td>Recorded on the biometric system. It is your responsibility to make sure it registers.</td></tr>
+<tr><th>Total</th><td class="big">100</td><td></td></tr>
+</tbody></table>
+```
+
+### Attendance {#attendance}
+
+```{=html}
+<table class="t att" data-quarto-disable-processing="true">
+<thead><tr><th>Classes missed</th><th>Marks</th></tr></thead>
+<tbody><tr><td>≤ 4</td><td>7</td></tr><tr><td>5–6</td><td>5</td></tr><tr><td>7–8</td><td>3</td></tr><tr><td>9–10</td><td>1</td></tr><tr><td>&gt; 10</td><td>0</td></tr></tbody></table>
+```
+
+There is no leave-request system; a missed class is an absence. For a genuine emergency that forces you to miss several classes in a row, talk to the instructor.
+
+### AI tools {#ai}
+
+Use AI tools honestly and document meaningful assistance. What is assessed is your ability to explain your own decisions and results in the viva.
+
+:::

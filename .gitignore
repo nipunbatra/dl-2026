@@ -13,3 +13,7 @@ __pycache__/
 # Shared progressive enhancements included by Quarto.
 !/course-tools.html
 !/course-theme.html
+
+!/rail.html
+
+**/*.quarto_ipynb

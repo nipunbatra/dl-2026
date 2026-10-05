@@ -1,45 +1,71 @@
 ---
-title: "Deep Learning"
-subtitle: "IIT Gandhinagar · Semester I, 2026–27"
-page-layout: full
+pagetitle: "ES 667 · Deep Learning"
+description: "Deep Learning at IIT Gandhinagar, Semester I 2026–27"
+body-classes: dl wide
 ---
 
+::: {.top}
+
+::: {.top-main}
 ```{=html}
-<p class="course-home-intro">ES 667 develops deep-learning models from their statistical and computational foundations.</p>
-<div class="course-home-meta" aria-label="Course information">
-  <span>Instructor <a href="https://nipunbatra.github.io">Prof. Nipun Batra</a></span>
-  <span>Office 13/401C</span>
-  <span>Credits 3-0-0-4</span>
-  <a href="mailto:nipun.batra@iitgn.ac.in">nipun.batra@iitgn.ac.in</a>
+<span hidden></span><!-- keeps Quarto from moving the h1 into its own title block -->
+<h1 class="h1">Deep Learning</h1>
+<p class="role">ES 667 · IIT Gandhinagar · Semester I, 2026–27</p>
+<p class="lede" style="margin-top:18px">ES 667 develops deep-learning models from their statistical and computational foundations. The course begins with likelihood, loss functions and multilayer networks, and proceeds to convolutional models, sequence models, Transformers, representation learning and generative models.</p>
+<dl class="facts">
+  <dt>Instructor</dt><dd><a href="https://nipunbatra.github.io">Prof. Nipun Batra</a></dd>
+  <dt>Office</dt><dd>13/401C</dd>
+  <dt>Credits</dt><dd>3-0-0-4</dd>
+  <dt>Email</dt><dd><a href="mailto:nipun.batra@iitgn.ac.in">nipun.batra@iitgn.ac.in</a></dd>
+  <dt>Assignments</dt><dd><a href="Assignments/assignment1_optimization.html">1 · Optimization</a><br><a href="Assignments/assignment2.html">2 · Small models and attention</a></dd>
+  <dt>Discussion</dt><dd><a href="https://join.slack.com/t/dl26workspace/shared_invite/zt-43b3v79vb-bVZl1_sJVCrBkVMDsq5TYA">Course Slack</a></dd>
+</dl>
+```
+:::
+
+::: {.next aria-labelledby="next-h"}
+[Coming up]{#next-h .label}
+
+{{< include _dates.qmd >}}
+
+[All dates](assessment.qmd#deadlines){.all}
+:::
+
+:::
+
+```{=html}
+<section class="rule-top" id="lectures"><h2>Lectures</h2>
+<ul class="modules">
+  <li><span class="r">1–4</span><a href="schedule.html#foundations">Foundations</a><span class="c">4 lectures</span></li>
+  <li><span class="r">5–9</span><a href="schedule.html#gradients-optimization">Gradients and optimization</a><span class="c">5 lectures</span></li>
+  <li><span class="r">10</span><a href="schedule.html#generalization">Generalization</a><span class="c">1 lecture</span></li>
+  <li><span class="r">11–15</span><a href="schedule.html#attention-and-language">Attention and language</a><span class="c">5 lectures</span></li>
+  <li><span class="r">16–20</span><a href="schedule.html#vision">Vision and language</a><span class="c">5 lectures</span></li>
+</ul>
+<div class="playlists">
+  <a class="btn ib" href="https://www.youtube.com/playlist?list=PLGRBnxCA2r9c" target="_blank" rel="noopener noreferrer"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="1.5"/><path d="m16 10.5 5-3v9l-5-3z"/></svg>Full lecture playlist</a>
+  <a class="btn ib" href="https://www.youtube.com/playlist?list=PLP_52n19dyQM" target="_blank" rel="noopener noreferrer"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V10M10 2.5h4M12 2.5V6M18 6.5l1.3-1.3"/></svg>3-minute summaries playlist</a>
+  <a class="btn solid" href="schedule.html">All 20 lectures</a>
 </div>
-<div class="course-home-links">
-  <a class="course-home-link course-home-primary" href="schedule.html">
-    <i class="bi bi-collection" aria-hidden="true"></i>
-    <span><strong class="course-home-link-title">Lecture library</strong><span class="course-home-link-detail">Notes, slides, cheat sheets, notebooks and videos</span></span>
-  </a>
-  <div class="course-home-group">
-    <i class="bi bi-journal-code" aria-hidden="true"></i>
-    <div><h2 class="course-home-link-title">Assignments</h2><div class="course-home-group-links"><a href="Assignments/assignment1_optimization.html">Assignment 1 · Optimization</a><a href="Assignments/assignment2.html">Assignment 2 · Small models and attention</a></div></div>
-  </div>
-  <div class="course-home-group">
-    <i class="bi bi-clipboard-check" aria-hidden="true"></i>
-    <div><h2 class="course-home-link-title">Assessment</h2><span class="course-home-link-detail">Course policies and submission dates</span><div class="course-home-group-links"><a href="grading.html">Grading</a><a href="deadlines.html">Deadlines</a></div></div>
-  </div>
-  <div class="course-home-group">
-    <i class="bi bi-question-circle" aria-hidden="true"></i>
-    <div><h2 class="course-home-link-title">Course help</h2><span class="course-home-link-detail">Questions, announcements and discussion</span><div class="course-home-group-links"><a href="faq.html">Course FAQ</a><a href="https://join.slack.com/t/dl26workspace/shared_invite/zt-43b3v79vb-bVZl1_sJVCrBkVMDsq5TYA">Slack workspace</a></div></div>
-  </div>
+</section>
+
+<div class="two rule-top">
+<section id="faq"><h2>Questions</h2>
+<details class="q" id="final-project"><summary>Is there a final project?</summary><p>No separate final project. Each of the <strong>three assignments</strong> is a substantial programming task, so you get project-scale practice throughout the semester.</p></details>
+<details class="q" id="assignment-grading"><summary>How are assignments graded?</summary><p>You submit code by the deadline, then take a <strong>short individual quiz or viva</strong> on your own submission. The viva is where the marks are decided: be ready to explain your code, your plots and your choices. See <a href="assessment.html#grading">Grading</a>.</p></details>
+<details class="q" id="framework"><summary>Language and framework?</summary><p><strong>Python and PyTorch.</strong> No other frameworks (TensorFlow, JAX) unless explicitly allowed.</p></details>
+<details class="q" id="gpu"><summary>Do I need a GPU?</summary><p>Not for everything, but some assignments benefit from one. A free Colab GPU is enough; any extra compute credits will be announced on Slack.</p></details>
+<details class="q" id="materials"><summary>Where are the slides and notebooks?</summary><p>In the <a href="schedule.html">lecture list</a>: every lecture links its notes, slides, cheat sheet, notebooks and videos. The <a href="https://nipunbatra.github.io/dl-teaching/">course materials site</a> has the full set of decks, runnable notebooks and assignments.</p></details>
+<details class="q" id="ai-tools"><summary>Can I use AI tools?</summary><p>Yes, honestly and with meaningful assistance documented. What is assessed is your ability to explain your own work in the viva, which no tool can do for you.</p></details>
+<p class="small muted" style="margin-top:12px">Anything else: ask on <a href="https://join.slack.com/t/dl26workspace/shared_invite/zt-43b3v79vb-bVZl1_sJVCrBkVMDsq5TYA">the course Slack</a>.</p>
+</section>
+<section id="references"><h2>References</h2>
+<p class="small muted">There is no required textbook. Useful references include:</p>
+<ul class="refs">
+  <li>Simon J. D. Prince, <i>Understanding Deep Learning</i> (<a href="https://udlbook.github.io/udlbook/">online edition</a>)</li>
+  <li>Christopher M. Bishop and Hugh Bishop, <i>Deep Learning: Foundations and Concepts</i></li>
+  <li>Aston Zhang, Zachary C. Lipton, Mu Li and Alexander J. Smola, <i>Dive into Deep Learning</i> (<a href="https://d2l.ai/">online edition</a>)</li>
+</ul>
+</section>
 </div>
 ```
-
-## Course overview
-
-The course begins with likelihood, loss functions and multilayer networks, and proceeds to convolutional models, sequence models, Transformers, representation learning and generative models.
-
-## References
-
-There is no required textbook. Useful references include:
-
-- Simon J. D. Prince, *Understanding Deep Learning* ([online edition](https://udlbook.github.io/udlbook/))
-- Christopher M. Bishop and Hugh Bishop, *Deep Learning: Foundations and Concepts*
-- Aston Zhang, Zachary C. Lipton, Mu Li and Alexander J. Smola, *Dive into Deep Learning* ([online edition](https://d2l.ai/))

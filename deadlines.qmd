@@ -1,22 +1,10 @@
 ---
 title: "Deadlines"
+include-in-header:
+  text: |
+    <meta http-equiv="refresh" content="0; url=assessment.html#deadlines">
+    <link rel="canonical" href="https://nipunbatra.github.io/dl-2026/assessment.html#deadlines">
+    <meta name="robots" content="noindex">
 ---
 
-Three assignments and three course quizzes (best two count). Each assignment also has a short individual assignment quiz/viva, separate from the course quizzes listed below. All times are in IST.
-
-| Date | Event |
-|---|---|
-| 04 Aug 26 | Course begins |
-| 17 Aug 26 | Add-Drop Period Ends |
-| 19 Aug 26 | Assignment 1 released |
-| 27 Aug 26 | Assignment 1 due |
-| 10 Sep 26 | **Quiz 1** |
-| 30 Sep 26 | [Assignment 2 released](Assignments/assignment2.qmd) |
-| 08 Oct 26, 6:30 pm | [Assignment 2 due](Assignments/assignment2.qmd) |
-| 08 Oct 26, 6:30 pm | **Assignment 2 quiz** |
-| 15 Oct 26 | **Quiz 2** |
-| 16 Oct 26 | Assignment 3 released |
-| 02 Nov 26 | Assignment 3 due |
-| 10 Nov 26 | **Quiz 3**  |
-
-See [Grading](grading.qmd) for how these count.
+Deadlines are now part of the Assessment page: [go to Dates](assessment.html#deadlines).
