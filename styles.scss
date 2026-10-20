@@ -174,7 +174,7 @@ body.dl.wide main.content { max-width: none; }
 .next li.hot .d { color: var(--accent); }
 .next table { font-size: 13px; margin: 0; }
 .next .all { margin: 14px 0 0; font-size: 13px; }
-.modules { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 2px solid var(--ink); }
+.modules { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); border-top: 2px solid var(--ink); }
 .modules li { padding: 12px 14px 4px 0; min-width: 0; }
 .modules li + li { border-left: 1px solid var(--rule); padding-left: 14px; }
 .modules .r { font: 700 22px/1.1 var(--heading); letter-spacing: -.04em; font-variant-numeric: tabular-nums; display: block; color: var(--ink); }
