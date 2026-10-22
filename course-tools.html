@@ -27,7 +27,7 @@
     b.type = 'button';
     b.className = 'anchor';
     b.title = 'Copy link';
-    b.setAttribute('aria-label', 'Copy link to ' + (row ? 'lecture ' + id.replace('lecture-', '') : h.textContent.trim()));
+    b.setAttribute('aria-label', 'Copy link to ' + (row && id.startsWith('lecture-') ? 'lecture ' + id.slice(8) : h.textContent.trim()));
     b.innerHTML = LINK + '<span class="done">Copied</span>';
     b.addEventListener('click', () => {
       const url = location.origin + location.pathname + '#' + id;
